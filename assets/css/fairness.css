@@ -1,0 +1,280 @@
+.fairness {
+  width: 100%;
+  height: auto;
+}
+.fairness_tittle {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  /* Bold/H4 */
+  font-family: "TT Supermolot Neue", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.44px;
+}
+.fairness_tittle svg {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.fairness_buttons_section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.fairness_buttons_section_left {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 8px;
+  border-radius: 4px;
+  background: #1b1d20;
+}
+.fairness_buttons_section_left_item {
+  height: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: #a7b1b9;
+  /* DemiBold/Body 1 */
+  font-family: "TT Supermolot Neue", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 22.5px */
+  padding: 8px 23px;
+  border-radius: 2px;
+  background: transparent;
+}
+.fairness_buttons_section_right {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 8px;
+  border-radius: 4px;
+  background: #1b1d20;
+}
+.fairness_buttons_section_right_iten {
+  height: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  color: #a7b1b9;
+  /* DemiBold/Body 1 */
+  font-family: "TT Supermolot Neue", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 22.5px */
+  padding: 8px 23px;
+  border-radius: 2px;
+  background: transparent;
+}
+.fairness_buttons_section_right_iten svg {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.fairness_buttons_section_item_active {
+  color: #fff;
+  background: #272a2f;
+}
+.fairness_sections {
+}
+.fairness_section {
+}
+
+.fairness_section_checkbox{
+    margin-top: 12px;
+}
+
+.fairness_section_checkbox .css-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.fairness_section_checkbox #inputPreview {
+  display: flex;
+  gap: 20px;
+}
+.fairness_section_checkbox .css-checkbox + label {
+  position: relative;
+  color: #A7B1B9;
+/* Medium/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 22.5px */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  color: #A7B1B9;
+}
+.fairness_section_checkbox .css-checkbox + label::before {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(39, 42, 47);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(39, 42, 47);
+  border-radius: 2px;
+  box-shadow: none;
+}
+.fairness_section_checkbox .css-checkbox:checked + label::after {
+  content: " ";
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+");
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: center center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 10px;
+  height: 22px;
+  width: 22px;
+}
+
+
+
+.fairness_section{
+    width: 100%;
+    margin-top: 16px;
+}
+
+.fairness_section_how {
+}
+.fairness_section_how_blocks {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.fairness_section_how_block {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 4px;
+background: #1B1D20;
+}
+.fairness_section_how_block_content {
+    padding: 24px;
+}
+.fairness_section_how_block_tittle {
+    overflow: hidden;
+color: #FFF;
+text-overflow: ellipsis;
+/* Bold/H4 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.44px;
+}
+.fairness_section_how_block_text {
+    margin-top: 12px;
+    color: #A7B1B9;
+/* Medium/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 22.5px */
+}
+.fairness_section_how_block_text span{
+    text-decoration: underline;
+    color: #A7B1B9;
+}
+.fairness_section_how_block_input {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+}
+.fairness_section_how_block_input_tittle {
+    color: #FFF;
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+}
+.fairness_section_how_block_input_input {
+    width: 100%;
+    max-width: 448px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+background: #151517;
+color: #FFF;
+/* Medium/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 22.5px */
+padding: 12px 16px;
+margin-top: 6px;
+}
+.fairness_section_how_block_input_seed {
+    display: flex;
+    align-items: center;
+}
+.fairness_section_how_block_input_seed_buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+.fairness_section_how_block_input_seed_button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+    color:#fff;
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+padding: 12px 16px;
+border-radius: 4px;
+background: #272A2F;
+}
+.fairness_section_how_block_input_seed_button:hover{
+    opacity: .5;
+}
+.fairness_section_how_block_input_seed_button:first-child{
+    background: #4D88FF;
+    margin-right: 8px;
+}
+.fairness_section_checkbox {
+}
+.css-checkbox {
+}

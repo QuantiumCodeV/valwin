@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="" />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="assets/js/jquery-3.6.3.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <title>WALWIN</title>
+  </head>
+  <body>
+
+
+<div class="modal" id="modalLogin">
+  <div class="modal_overlay"></div>
+  <div class="modal_login_rect modal_c">
+    <div class="modal_login_rect_items">
+      <div class="modal_login_rect_item">
+        <img src="./assets/img/modal/modal_login_img.png" alt="" class="modal_login_rect_item_img">
+      </div>
+      <div class="modal_login_rect_item">
+        <div class="modal_login_rect_item_content">
+
+          <div class="modal_login_rect_item_section" id="LogIn">
+            <div class="modal_login_rect_item_section_tittle">Log in</div>
+            <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+            <div class="modal_login_rect_item_section_buttons">
+              <div class="modal_login_rect_item_section_buttons_content">
+                <button class="modal_login_rect_item_section_button OpenLogin modal_login_rect_item_section_button_active">Log In</button>
+                <button class="modal_login_rect_item_section_button OpenSignin">Sign In</button>
+              </div>
+            </div>
+            <div class="modal_login_rect_item_section_blocks">
+              <div class="modal_login_rect_item_section_block">
+                <p class="modal_login_rect_item_section_block_tittle">Email</p>
+                <input type="text" placeholder="Name@gmail.com" class="modal_login_rect_item_section_block_input" style="background: #151517 url(./assets/img/modal/modal_mail.svg)left no-repeat;     background-position-x: 16px;">
+              </div>
+              <div class="modal_login_rect_item_section_block">
+                <p class="modal_login_rect_item_section_block_tittle">Password</p>
+                <div class="modal_login_rect_item_section_block_pass">
+                  <input type="text" placeholder="Name@gmail.com" class="modal_login_rect_item_section_block_input"  style="background: #151517 url(./assets/img/modal/modal_pass.svg)left no-repeat;     background-position-x: 16px;">
+<img src="./assets/img/modal/modal_eyes.svg" alt="" class="modal_login_rect_item_section_block_yeyes">
+                </div>
+              </div>
+            </div>
+
+<p class="modal_login_rect_item_section_forgot OpenReset">Forgot password?</p>
+<button class="modal_login_rect_item_section_main_button">Log in</button>
+
+
+<div class="modal_login_rect_item_section_bottom">
+  <div class="modal_login_rect_item_section_bottom_other">
+    <div class="modal_login_rect_item_section_bottom_other_line"></div>
+    <p class="modal_login_rect_item_section_bottom_other_tittle">OTHER METHODS</p>
+    <div class="modal_login_rect_item_section_bottom_other_line"></div>
+  </div>
+  <div class="modal_login_rect_item_section_bottom_buttons">
+    <button class="modal_login_rect_item_section_bottom_button"><img src="./assets/img/modal/modal_google.svg" alt=""> Log in via Google</button>
+    <button class="modal_login_rect_item_section_bottom_button"><img src="./assets/img/modal/modal_ds.svg" alt=""> Log in via Discord</button>
+    <button class="modal_login_rect_item_section_bottom_button"><img src="./assets/img/modal/modal_tg.svg" alt=""> Log in via Telegram</button>
+  </div>
+</div>
+
+          </div>
+
+          <div class="modal_login_rect_item_section" id="SignIn" style="display: none;">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modalSign">
+  <div class="modal_overlay"></div>
+  <div class="modal_login_rect modal_c">
+    <div class="modal_login_rect_items">
+      <div class="modal_login_rect_item">
+        <img src="./assets/img/modal/modal_login_img2.png" alt="" class="modal_login_rect_item_img">
+      </div>
+      <div class="modal_login_rect_item">
+        <div class="modal_login_rect_item_content">
+
+          <div class="modal_login_rect_item_section" id="LogIn">
+            <div class="modal_login_rect_item_section_tittle">Sign in</div>
+            <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+            <div class="modal_login_rect_item_section_buttons">
+              <div class="modal_login_rect_item_section_buttons_content">
+                <button class="modal_login_rect_item_section_button OpenLogin">Log In</button>
+                <button class="modal_login_rect_item_section_button OpenSignin modal_login_rect_item_section_button_active">Sign In</button>
+              </div>
+            </div>
+            <div class="modal_login_rect_item_section_blocks">
+              <div class="modal_login_rect_item_section_block">
+                <p class="modal_login_rect_item_section_block_tittle">Email</p>
+                <input type="text" placeholder="Name@gmail.com" class="modal_login_rect_item_section_block_input" style="background: #151517 url(./assets/img/modal/modal_mail.svg)left no-repeat;     background-position-x: 16px;">
+              </div>
+              <div class="modal_login_rect_item_section_block">
+                <p class="modal_login_rect_item_section_block_tittle">Password</p>
+                <div class="modal_login_rect_item_section_block_pass">
+                  <input type="text" placeholder="Name@gmail.com" class="modal_login_rect_item_section_block_input"  style="background: #151517 url(./assets/img/modal/modal_pass.svg)left no-repeat;     background-position-x: 16px;">
+<img src="./assets/img/modal/modal_eyes.svg" alt="" class="modal_login_rect_item_section_block_yeyes">
+                </div>
+              </div>
+              <div class="modal_login_rect_item_section_block">
+                <p class="modal_login_rect_item_section_block_tittle">Password</p>
+                <div class="modal_login_rect_item_section_block_pass">
+                  <input type="text" placeholder="Name@gmail.com" class="modal_login_rect_item_section_block_input"  style="background: #151517 url(./assets/img/modal/modal_pass.svg)left no-repeat;     background-position-x: 16px;">
+<img src="./assets/img/modal/modal_eyes.svg" alt="" class="modal_login_rect_item_section_block_yeyes">
+                </div>
+              </div>
+            </div>
+
+<div class="modal_login_rect_item_section_checkbox">
+  <div id="inputPreview">
+		<input name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox">
+		<label for="demo_opt_1">Agree with <a href="#!">Terms and Conditions</a></label>
+	</div>
+</div>
+<button class="modal_login_rect_item_section_main_button OpenCreate">Sign in</button>
+
+
+<div class="modal_login_rect_item_section_bottom">
+  <div class="modal_login_rect_item_section_bottom_other">
+    <div class="modal_login_rect_item_section_bottom_other_line"></div>
+    <p class="modal_login_rect_item_section_bottom_other_tittle">OTHER METHODS</p>
+    <div class="modal_login_rect_item_section_bottom_other_line"></div>
+  </div>
+  <div class="modal_login_rect_item_section_bottom_buttons">
+    <button class="modal_login_rect_item_section_bottom_button"><img src="./assets/img/modal/modal_google.svg" alt=""> Sign in via Google</button>
+    <button class="modal_login_rect_item_section_bottom_button"><img src="./assets/img/modal/modal_ds.svg" alt=""> Sign in via Discord</button>
+    <button class="modal_login_rect_item_section_bottom_button"><img src="./assets/img/modal/modal_tg.svg" alt=""> Sign in via Telegram</button>
+  </div>
+</div>
+
+          </div>
+
+          <div class="modal_login_rect_item_section" id="SignIn" style="display: none;">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modalCreate">
+  <div class="modal_overlay"></div>
+
+  <div class="modal_create">
+    <div class="modal_create_content">
+      <p class="modal_create_tittle">Create profile</p>
+      <div class="modal_create_select">
+        <div class="modal_create_select_items">
+          <div class="modal_create_select_item">
+            <p class="modal_create_select_item_tittle">Select avatar</p>
+            <div class="modal_create_select_item_avatars">
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars1.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars2.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars3.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars4.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars5.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars1.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars2.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars3.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars4.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars5.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars1.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars2.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars3.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars4.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars5.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars1.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars2.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars3.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars4.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <div class="modal_create_select_item_avatar">
+                <img src="./assets/img/modal/avatars/avatars5.png" alt="" class="modal_create_select_item_avatar_icon">
+              </div>
+              <img src="./assets/img/modal/avatars/avatar_bg.png" alt="" class="modal_create_select_item_avatars_bg">
+            </div>
+          </div>
+          <div class="modal_create_select_item">
+            <p class="modal_create_select_item_tittle">Username</p>
+<input type="text" placeholder="Enter username" class="modal_create_select_item_input">
+          </div>
+        </div>
+        <button class="modal_create_select_item_button">Create account</button>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="modal" id="modalEditAvatar">
+    <div class="modal_overlay"></div>
+  
+    <div class="modal_create">
+      <div class="modal_create_content">
+        <p class="modal_create_tittle">Edit avatar</p>
+        <div class="modal_create_select">
+          <div class="modal_create_select_items">
+            <div class="modal_create_select_item">
+              <p class="modal_create_select_item_tittle">Select avatar</p>
+              <div class="modal_create_select_item_avatars">
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars1.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars2.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars3.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars4.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars5.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars1.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars2.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars3.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars4.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars5.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars1.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars2.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars3.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars4.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars5.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars1.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars2.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars3.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars4.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <div class="modal_create_select_item_avatar">
+                  <img src="./assets/img/modal/avatars/avatars5.png" alt="" class="modal_create_select_item_avatar_icon">
+                </div>
+                <img src="./assets/img/modal/avatars/avatar_bg.png" alt="" class="modal_create_select_item_avatars_bg">
+              </div>
+            </div>
+          </div>
+          <button class="modal_create_select_item_button">Save changes</button>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+
+<div class="modal" id="modalReset">
+  <div class="modal_overlay"></div>
+<div class="modal_reset">
+<div class="modal_reset_items">
+  <div class="modal_reset_item">
+    <img src="./assets/img/modal/modal_reset.png" alt="" class="modal_reset_item_img">
+  </div>
+  <div class="modal_reset_item">
+    <div class="modal_reset_item_content">
+      <div class="modal_reset_item_up">
+        <img src="./assets/img/modal/modal_back.svg" alt="" class="modal_reset_item_up_back OpenLogin">
+        <p class="modal_reset_item_up_tittle">Reset password</p>
+        <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+      </div>
+      <div class="modal_reset_item_block">
+        <p class="modal_reset_item_block_tittle">Email</p>
+        <input type="text" placeholder="Name@gmail.com" class="modal_reset_item_block_input" style="background: #151517 url(./assets/img/modal/modal_mail.svg)left no-repeat;     background-position-x: 16px;">
+      </div>
+      <button class="modal_reset_item_block_button OpenCode">Send reset code</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal" id="modalCode">
+  <div class="modal_overlay"></div>
+<div class="modal_reset">
+<div class="modal_reset_items">
+  <div class="modal_reset_item">
+    <img src="./assets/img/modal/modal_code.png" alt="" class="modal_reset_item_img">
+  </div>
+  <div class="modal_reset_item">
+    <div class="modal_reset_item_content">
+      <div class="modal_reset_item_up">
+        <img src="./assets/img/modal/modal_back.svg" alt="" class="modal_reset_item_up_back OpenReset">
+        <p class="modal_reset_item_up_tittle">Enter reset code</p>
+        <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+      </div>
+      <div class="modal_reset_item_block">
+<p class="modal_reset_item_block_code_text">The password reset code has been sent to the specified email. Enter the code to continue.</p>
+<div class="modal_reset_item_block_codes">
+  <input type="text" maxlength="1" class="modal_reset_item_block_code">
+  <input type="text" maxlength="1" class="modal_reset_item_block_code">
+  <input type="text" maxlength="1" class="modal_reset_item_block_code">
+  <input type="text" maxlength="1" class="modal_reset_item_block_code">
+  <input type="text" maxlength="1" class="modal_reset_item_block_code">
+</div>
+      </div>
+      <button class="modal_reset_item_block_button OpenPass">Reset password</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal" id="modalPass">
+  <div class="modal_overlay"></div>
+<div class="modal_reset">
+<div class="modal_reset_items">
+  <div class="modal_reset_item">
+    <img src="./assets/img/modal/modal_code.png" alt="" class="modal_reset_item_img">
+  </div>
+  <div class="modal_reset_item">
+    <div class="modal_reset_item_content">
+      <div class="modal_reset_item_up">
+        <p class="modal_reset_item_up_tittle">Enter new password</p>
+        <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+      </div>
+      <div class="modal_reset_item_block">
+<div class="modal_login_rect_item_section_blocks">
+  <div class="modal_login_rect_item_section_block">
+    <p class="modal_login_rect_item_section_block_tittle">Password</p>
+    <div class="modal_login_rect_item_section_block_pass">
+      <input type="text" placeholder="Enter password" class="modal_login_rect_item_section_block_input"  style="background: #151517 url(./assets/img/modal/modal_pass.svg)left no-repeat;     background-position-x: 16px;">
+<img src="./assets/img/modal/modal_eyes.svg" alt="" class="modal_login_rect_item_section_block_yeyes">
+    </div>
+  </div>
+  <div class="modal_login_rect_item_section_block">
+    <p class="modal_login_rect_item_section_block_tittle">Password</p>
+    <div class="modal_login_rect_item_section_block_pass">
+      <input type="text" placeholder="Enter password" class="modal_login_rect_item_section_block_input"  style="background: #151517 url(./assets/img/modal/modal_pass.svg)left no-repeat;     background-position-x: 16px;">
+<img src="./assets/img/modal/modal_eyes.svg" alt="" class="modal_login_rect_item_section_block_yeyes">
+    </div>
+  </div>
+</div>
+
+      </div>
+      <button class="modal_reset_item_block_button OpenSaved">Reset password</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal" id="modalSaved">
+<div class="modal_save">
+<p class="modal_save_tittle"><img src="./assets/img/modal/save_accept.svg" alt=""> Password saved</p>
+<div class="modal_save_progress">
+  <div class="modal_save_progress_bg"></div>
+</div>
+</div>
+</div>
+
+<div class="modal" id="modalHow">
+  <div class="modal_overlay"></div>
+  <div class="modal_how">
+<div class="modal_how_up">
+  <img src="./assets/img/modal/how_img.png" alt="" class="modal_how_up_img">
+  <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+</div>
+<div class="modal_how_content">
+  <p class="modal_how_content_tittle">How to play?</p>
+  <p class="modal_how_content_text">The password reset code has been sent to the specified email. Enter the code to continue.</p>
+</div>
+  </div>
+  </div>
+  
+  <div class="modal" id="modalProvably">
+    <div class="modal_overlay"></div>
+    <div class="modal_provably">
+<div class="modal_provably_content">
+  <p class="modal_provably_tittle">Provably Fair</p>
+  <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+<div class="modal_provably_blocks">
+  <div class="modal_provably_block">
+    <p class="modal_provably_block_tittle">Hashed Server Seed</p>
+    <input type="text" placeholder="Enter Seed" class="modal_provably_block_input">
+  </div>
+  <div class="modal_provably_block">
+    <p class="modal_provably_block_tittle">Client seed</p>
+    <input type="text" placeholder="9441dfa" class="modal_provably_block_input">
+  </div>
+</div>
+<div class="modal_provably_buttons">
+  <button class="modal_provably_button">Check seed</button>
+  <button class="modal_provably_button OpenProvablyHow">How it works?</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal" id="modalProvablyHow">
+  <div class="modal_overlay"></div>
+<div class="modal_provably_how">
+  <div class="modal_provably_how_content">
+    <p class="modal_provably_how_tittle">How it works?</p>
+    <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+    <div class="modal_provably_how_main">
+      <div class="modal_provably_how_main_texts">
+        <p class="modal_provably_how_main_text">Server and Client Seed Generation:</p>
+        <p class="modal_provably_how_main_text">The game generates a server seed, which is hashed and displayed to the player before the game starts so that the player knows the server seed was created prior to making their choices. <br>
+          The player can either choose their own client seed or use a random one generated by the system.
+          </p>
+          <p class="modal_provably_how_main_text">Mine Placement Using Seeds:</p>
+          <p class="modal_provably_how_main_text">Once the client seed and server seed are combined (for example, using the HMAC method), a random result is generated, determining the location of the mines on the field. <br>
+          </p>
+          <p class="modal_provably_how_main_text">Using the Provably Fair algorithm, the player can recompute the hash and verify that the mine placement was randomly generated and remained unchanged after the game started.</p>
+          <p class="modal_provably_how_main_text">Fairness Verification:</p>
+          <p class="modal_provably_how_main_text">After the game, the player can use the available server seed hash and client seed to recalculate the results and confirm that the game was not tampered with. <br> Most Provably Fair sites provide a simple interface for verification, where the player enters the initial parameters (seeds and hash) to ensure the game was fair.</p>
+          <p class="modal_provably_how_main_text">Example of Provably Fair for Mines</p>
+          <p class="modal_provably_how_main_text">For example:</p>
+          <p class="modal_provably_how_main_text">Let’s say the server seed is "abcd1234" and the client seed is "user5678."
+            The hash of both seeds can generate numbers indicating which cells contain mines. <br>
+            After the game, the player can recalculate this result and confirm that the hash matches and the result was not tampered with.</p>
+
+      </div>
+      <img src="./assets/img/modal/provably_how_bg.png" alt="" class="modal_provably_how_main_bg">
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="modal" id="modalProfileSetting">
+  <div class="modal_overlay"></div>
+<div class="modal_progile_setting">
+  <div class="modal_progile_setting_content">
+    <div class="modal_progile_setting_up">
+      <p class="modal_progile_setting_tittle">Settings</p>
+      <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+      <div class="modal_progile_setting_blocks">
+        <div class="modal_progile_setting_blocks_block">
+          <p class="modal_progile_setting_blocks_block_tittle">Username</p>
+          <input type="text" placeholder="Zabiakha" class="modal_progile_setting_blocks_block_input">
+        </div>
+        <div class="modal_progile_setting_blocks_block">
+          <p class="modal_progile_setting_blocks_block_tittle">Two-factor authentication</p>
+
+
+<!--  ПРИ ДОБАВЛЕНИИ modal_progile_setting_blocks_block_rect_twoact к modal_progile_setting_blocks_block_rect СКРЫВАЕМ СТАНДАРТ ТЕКСТ И ПОКАЗЫВАЕТ ГАЛОЧКУ С АКТИВИРОВ -->
+
+          <div class="modal_progile_setting_blocks_block_rect">
+            <div class="modal_progile_setting_blocks_block_rect_content">
+              <p class="modal_progile_setting_blocks_block_rect_tittle">Not activated</p>
+              <div class="modal_progile_setting_blocks_block_rect_tittle_act"><img src="./assets/img/modal/save_accept.svg" alt=""> Activated</div>
+              <button class="modal_progile_setting_blocks_block_rect_button modal_progile_setting_tittle_blocks_block_rect_button_active">Enable 2fa</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal_progile_setting_blocks_block">
+          <p class="modal_progile_setting_blocks_block_tittle">Connections</p>
+          <div class="modal_progile_setting_blocks_block_items">
+            <div class="modal_progile_setting_blocks_block_rect">
+              <div class="modal_progile_setting_blocks_block_rect_content">
+                <p class="modal_progile_setting_blocks_block_rect_tittle"><img src="./assets/img/modal/modal_profile_setting_google.svg" alt=""> Google</p>
+                <button class="modal_progile_setting_blocks_block_rect_button modal_progile_setting_tittle_blocks_block_rect_button_active">Connect</button>
+              </div>
+            </div>
+            <div class="modal_progile_setting_blocks_block_rect">
+              <div class="modal_progile_setting_blocks_block_rect_content">
+                <p class="modal_progile_setting_blocks_block_rect_tittle"><img src="./assets/img/modal/modal_profile_setting_ds.svg" alt=""> Discrod</p>
+                <button class="modal_progile_setting_blocks_block_rect_button ">Disconect</button>
+              </div>
+            </div>
+            <div class="modal_progile_setting_blocks_block_rect">
+              <div class="modal_progile_setting_blocks_block_rect_content">
+                <p class="modal_progile_setting_blocks_block_rect_tittle"><img src="./assets/img/modal/modal_profile_setting_tg.svg" alt=""> Telegram</p>
+                <button class="modal_progile_setting_blocks_block_rect_button modal_progile_setting_tittle_blocks_block_rect_button_active">Connect</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal_progile_setting_blocks_block">
+          <p class="modal_progile_setting_blocks_block_tittle">Client seed</p>
+          <div class="modal_progile_setting_blocks_block_rect">
+            <div class="modal_progile_setting_blocks_block_rect_content">
+              <input type="text" placeholder="c438w9qdscmd" class="modal_progile_setting_blocks_block_rect_ceed" value="c438w9qdscmd" disabled>
+              <button class="modal_progile_setting_blocks_block_rect_copy"><img src="./assets/img/modal/modal_profile_setting_copy.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="modal_progile_setting_button">Save changes</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal" id="modalFactor">
+  <div class="modal_overlay"></div>
+<div class="modal_factor">
+  <div class="modal_factor_content">
+    <p class="modal_factor_tittle">Two-factor authentication</p>
+    <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+<p class="modal_factor_subtittle">Scan the image below with the two-factor authentication app on your phone.</p>
+<div class="modal_factor_qr_rect">
+  <div class="modal_factor_qr_rect_content">
+    <img src="./assets/img/modal/modal_factor_qr.svg" alt="" class="modal_factor_qr_rect_icon">
+  </div>
+</div>
+<div class="modal_factor_blocks">
+  <div class="modal_factor_block">
+    <p class="modal_factor_block_tittle">Two-factor secret</p>
+    <div class="modal_factor_block_rect">
+      <div class="modal_factor_block_rect_content">
+        <input type="text" placeholder="otpauth://totp/Rain.gg%3A%20maxu-bcd004?secret=MZTDKYJTHAZTEM3KS1GGDMIZWMZTFGU2DMNBYG5RGEMRXG5SWKN3BHAYTINDGG4YGEZRT" value="otpauth://totp/Rain.gg%3A%20maxu-bcd004?secret=MZTDKYJTHAZTEM3KS1GGDMIZWMZTFGU2DMNBYG5RGEMRXG5SWKN3BHAYTINDGG4YGEZRT" disabled class="modal_factor_block_rect_input">
+      <button class="modal_factor_block_rect_copy"><img src="./assets/img/modal/modal_factor_copy.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+  <div class="modal_factor_block">
+    <p class="modal_factor_block_tittle">Authentication code</p>
+    <input type="text" placeholder="Enter your authentication code" class="modal_factor_block_input">
+  </div>
+</div>
+<div class="modal_factor_button">Enable 2fa</div>
+  </div>
+</div>
+  
+</div>
+
+<div class="modal" id="modalWhat">
+  <div class="modal_overlay"></div>
+<div class="modal_what">
+  <div class="modal_what_content">
+    <p class="modal_what_tittle">What is the difference ?</p>
+    <img src="./assets/img/modal/modal_close.svg" alt="" class="modal_login_rect_item_section_close">
+<div class="modal_what_items">
+  <div class="modal_what_item">
+    <div class="modal_what_item_content">
+      <p class="modal_what_item_tittle"><img src="./assets/img/modal/what_normal.svg" alt=""> Normal mode</p>
+      <p class="modal_what_item_text">Server and Client Seed Generation:</p>
+    </div>
+  </div>
+  <div class="modal_what_item">
+    <div class="modal_what_item_content">
+      <p class="modal_what_item_tittle"><img src="./assets/img/modal/what_shared.svg" alt=""> Shared Mode</p>
+      <p class="modal_what_item_text">Server and Client Seed Generation:</p>
+    </div>
+  </div>
+  <div class="modal_what_item">
+    <div class="modal_what_item_content">
+      <p class="modal_what_item_tittle"><img src="./assets/img/modal/what_crazy.svg" alt=""> Crazy Mode</p>
+      <p class="modal_what_item_text">Server and Client Seed Generation:</p>
+    </div>
+  </div>
+  <div class="modal_what_item">
+    <div class="modal_what_item_content">
+      <p class="modal_what_item_tittle"><img src="./assets/img/modal/what_terminal.svg" alt="">Terminal mode</p>
+      <p class="modal_what_item_text">Server and Client Seed Generation:</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="header">
+  <div class="header_container">
+    <div class="header_item_logo">
+      <img src="./assets/img/header_logo.svg" alt="" class="header_item_logo_icon OpenLogin">
+    </div>
+  <div class="header_items">
+    
+    <div class="header_item">
+      <ul class="header_item_navigations">
+        <li class="header_item_navigation header_item_navigation_active"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6667 10.8333V15C16.6667 15.663 16.4033 16.2989 15.9344 16.7678C15.4656 17.2366 14.8297 17.5 14.1667 17.5H10.8333V10.8333H16.6667ZM9.16667 10.8333V17.5H5.83334C5.17029 17.5 4.53441 17.2366 4.06557 16.7678C3.59673 16.2989 3.33333 15.663 3.33333 15V10.8333H9.16667ZM7.5 1.66667C7.97299 1.66611 8.44066 1.76646 8.87177 1.96104C9.30288 2.15561 9.68752 2.43993 10 2.795C10.3125 2.43993 10.6971 2.15561 11.1282 1.96104C11.5593 1.76646 12.027 1.66611 12.5 1.66667H12.9167C13.2482 1.66667 13.5661 1.79836 13.8006 2.03278C14.035 2.2672 14.1667 2.58515 14.1667 2.91667V3.33333C14.1667 3.94083 14.0042 4.51 13.7208 5H15.8333C16.2754 5 16.6993 5.17559 17.0118 5.48816C17.3244 5.80072 17.5 6.22464 17.5 6.66667V8.33333C17.5 8.63667 17.4192 8.92167 17.2767 9.16667H10.8333V6.66667C10.8333 6.44565 10.7455 6.23369 10.5893 6.07741C10.433 5.92113 10.221 5.83333 10 5.83333C9.77899 5.83333 9.56703 5.92113 9.41075 6.07741C9.25447 6.23369 9.16667 6.44565 9.16667 6.66667V9.16667H2.72333C2.57667 8.91346 2.49962 8.62595 2.5 8.33333V6.66667C2.5 6.22464 2.6756 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H6.27917C5.98621 4.49347 5.8324 3.91848 5.83334 3.33333V2.91667C5.83334 2.58515 5.96503 2.2672 6.19945 2.03278C6.43387 1.79836 6.75181 1.66667 7.08333 1.66667H7.5ZM7.5 3.33333C7.5 3.77536 7.6756 4.19928 7.98816 4.51184C8.30072 4.82441 8.72464 5 9.16667 5C9.16667 4.55797 8.99107 4.13405 8.67851 3.82149C8.36595 3.50893 7.94203 3.33333 7.5 3.33333ZM12.5 3.33333C12.058 3.33333 11.6341 3.50893 11.3215 3.82149C11.0089 4.13405 10.8333 4.55797 10.8333 5C11.2754 5 11.6993 4.82441 12.0118 4.51184C12.3244 4.19928 12.5 3.77536 12.5 3.33333Z" fill="#A7B1B9"/>
+        </svg></a></li>
+        <li class="header_item_navigation_line"></li>
+        <li class="header_item_navigation"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.30025 3.38414L10 5.55888L6 10.6767L3.35982 8.42468C3.13182 8.23021 3 7.94213 3 7.63836V4.02355C3 3.45826 3.44772 3 4 3H7.51938C7.82317 3 8.11048 3.14134 8.30025 3.38414ZM21 4.02355C21 3.45826 20.5523 3 20 3H16.4739C16.1739 3 15.8898 3.1378 15.6999 3.3754L7.18637 14.0259L5.70708 12.5118C5.31656 12.1121 4.68339 12.1121 4.29287 12.5118C3.90234 12.9115 3.90234 13.5596 4.29287 13.9593L5.79287 15.4946L3.70708 17.6295C3.31655 18.0293 3.31655 18.6773 3.70708 19.0771L5.29287 20.7002C5.68339 21.0999 6.31656 21.0999 6.70708 20.7002L8.79287 18.5653L10.2929 20.1006C10.6834 20.5003 11.3166 20.5003 11.7071 20.1006C12.0976 19.7009 12.0976 19.0528 11.7071 18.6531L10.2278 17.139L20.6332 8.42492C20.8654 8.23051 21 7.93973 21 7.63273V4.02355ZM14.32 17.6573L17.2929 20.7002C17.6834 21.0999 18.3166 21.0999 18.7071 20.7002L20.2929 19.0771C20.6834 18.6773 20.6834 18.0293 20.2929 17.6295L17.635 14.909L14.32 17.6573Z" fill="#A7B1B9"/>
+        </svg></a></li>
+        <li class="header_item_navigation_line"></li>
+        <li class="header_item_navigation"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6723 1.69369C12.1388 1.55075 11.596 1.84674 11.4599 2.3548C11.4219 2.49657 11.4196 2.63986 11.4476 2.7759C10.8465 2.97002 10.3372 3.38452 10.0493 3.94879L9.518 3.80643C8.7178 3.59202 7.90357 4.03601 7.69937 4.7981L4.74144 15.8373C4.53723 16.5993 5.02039 17.391 5.82058 17.6054L12.5821 19.4171C13.3823 19.6315 14.1965 19.1875 14.4007 18.4254L17.3586 7.38629C17.5628 6.6242 17.0797 5.83258 16.2795 5.61817L15.7482 5.47581C15.7668 5.11655 15.6995 4.76341 15.5602 4.43947L17.0089 4.82765C18.0759 5.11353 18.7201 6.16902 18.4478 7.18514L16.4758 14.5446C16.3397 15.0526 16.6618 15.5804 17.1953 15.7233C17.7287 15.8663 18.2716 15.5703 18.4077 15.0622L20.3797 7.70278C20.9242 5.67053 19.6358 3.55956 17.5019 2.98779L12.6723 1.69369ZM13.4892 9.65119C13.3488 9.42102 13.043 9.33908 12.8062 9.46817L11.5693 10.1427L10.8353 8.94007C10.6948 8.7099 10.389 8.62797 10.1523 8.75706L9.34403 9.1978C9.10729 9.32689 9.02925 9.61812 9.16973 9.84828L9.90371 11.0509L8.66678 11.7253C8.43004 11.8544 8.352 12.1457 8.49248 12.3758L8.9721 13.1617C9.11258 13.3918 9.41837 13.4738 9.65511 13.3447L10.892 12.6702L11.626 13.8728C11.7665 14.1029 12.0723 14.1849 12.309 14.0558L13.1173 13.6151C13.3541 13.486 13.4321 13.1947 13.2916 12.9646L12.5576 11.762L13.7946 11.0875C14.0313 10.9584 14.1093 10.6672 13.9689 10.437L13.4892 9.65119ZM5.09113 18.3959C4.55766 18.253 4.01484 18.5489 3.87871 19.057C3.74257 19.5651 4.06467 20.0928 4.59814 20.2358L12.3255 22.3063C12.859 22.4492 13.4018 22.1533 13.538 21.6452C13.6741 21.1371 13.352 20.6094 12.8185 20.4664L5.09113 18.3959Z" fill="#A7B1B9"/>
+        </svg></a></li>
+        <li class="header_item_navigation_line"></li>
+        <li class="header_item_navigation"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8.44445L21 8.44445L19.5394 4.83815C19.3344 4.33193 18.838 4 18.286 4L5.71399 4C5.16197 4 4.66557 4.33194 4.46055 4.83815L3 8.44445ZM3 10.2222H10.2V12.8889C10.2 13.3798 10.6029 13.7778 11.1 13.7778H12.9C13.3971 13.7778 13.8 13.3798 13.8 12.8889V10.2222H21V18.6667C21 19.403 20.3956 20 19.65 20H4.35C3.60442 20 3 19.403 3 18.6667V10.2222Z" fill="#A7B1B9"/>
+        </svg></a></li>
+        <li class="header_item_navigation_line"></li>
+        <li class="header_item_navigation"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M8.5001 5.93782C10.7448 4.64182 13.0506 3.84752 14.9921 3.64228C15.9609 3.54023 16.8883 3.57864 17.686 3.81436C18.4235 4.03173 19.0991 4.43383 19.5449 5.08402L19.6604 5.26795L21.6604 8.73205C22.0994 9.49242 22.13 10.3535 21.932 11.1686C21.7373 11.9774 21.3077 12.7993 20.7341 13.5877C19.5856 15.1665 17.7448 16.7662 15.5001 18.0622C13.2554 19.3582 10.9496 20.1525 9.00811 20.3577C8.03934 20.4598 7.11188 20.4214 6.31415 20.1856C5.57665 19.9683 4.9011 19.5662 4.45527 18.916L4.33984 18.7321L2.33984 15.2679C1.90084 14.5076 1.87022 13.6465 2.06815 12.8314C2.26288 12.0226 2.69248 11.2007 3.26611 10.4123C4.41459 8.83352 6.25536 7.23382 8.5001 5.93782ZM19.4683 8.93531C19.2665 9.33585 19.0171 9.73387 18.7341 10.1236C17.5856 11.7024 15.7448 13.3021 13.5001 14.5981C11.2554 15.8941 8.94959 16.6884 7.00811 16.8936C6.54458 16.945 6.07766 16.9589 5.61189 16.9353L6.07189 17.7321C6.18539 17.9286 6.4175 18.1307 6.88002 18.2678C7.34887 18.4058 7.99469 18.4544 8.79782 18.3695C10.4018 18.1997 12.4407 17.5191 14.5001 16.3301C16.5604 15.1406 18.1684 13.7157 19.1174 12.4115C19.5925 11.7584 19.8733 11.1748 19.9882 10.6998C20.1016 10.2302 20.0418 9.92864 19.9283 9.73205L19.4683 8.93531Z" fill="#A7B1B9"/>
+        </svg></a></li>
+        <li class="header_item_navigation_line"></li>
+        <li class="header_item_navigation"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <g clip-path="url(#clip0_5003_15762)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.71715 4H4.03908C3.80232 4 3.42887 4.09365 3.26146 4.26035C3.09405 4.42705 3 4.65314 3 4.88889V8.79467C2.99992 9.14584 3.10429 9.48916 3.29994 9.78133L4.48541 11.552C4.68107 11.8442 4.78543 12.1875 4.78535 12.5387V19.1111C4.78535 19.3469 4.8794 19.573 5.04681 19.7397C5.21422 19.9064 5.44128 20 5.67803 20H10V16C10 15.4696 10.2108 14.9609 10.5858 14.5858C10.9609 14.2107 11.4696 14 12 14C12.5305 14 13.0392 14.2107 13.4143 14.5858C13.7893 14.9609 14 15.4696 14 16V20H18.322C18.5587 20 18.7858 19.9064 18.9532 19.7397C19.1206 19.573 19.2146 19.3469 19.2146 19.1111V12.5387C19.2146 12.1875 19.3189 11.8442 19.5146 11.552L20.7001 9.78133C20.8957 9.48916 21.0001 9.14584 21 8.79467V4.88889C21 4.65314 20.906 4.42705 20.7385 4.26035C20.5711 4.09365 20.3441 4 20.1073 4H17.4293C17.1925 4 16.9655 4.09365 16.7981 4.26035C16.6306 4.42705 16.5366 4.65314 16.5366 4.88889V6.66667H13.8586V4.88889C13.8586 4.65314 13.7645 4.42705 13.5971 4.26035C13.4297 4.09365 13.2026 4 12.9659 4H11.1805C10.9438 4 10.7167 4.09365 10.5493 4.26035C10.3819 4.42705 10.2879 4.65314 10.2879 4.88889V6.66667H7.60982V4.88889C7.60982 4.65314 7.51577 4.42705 7.34837 4.26035C7.18096 4.09365 6.9539 4 6.71715 4Z" fill="#A7B1B9"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_5003_15762">
+              <rect width="24" height="24" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg></a></li>
+        
+      </ul>
+    </div>
+    <div class="header_item">
+      <div class="header_item_balance">
+        <div class="header_item_balance_content">
+          <div class="header_item_balance_balance">
+            <svg class="header_item_balance_balance_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10.0013 1.66667C14.6038 1.66667 18.3346 5.39751 18.3346 10C18.3346 14.6025 14.6038 18.3333 10.0013 18.3333C5.3988 18.3333 1.66797 14.6025 1.66797 10C1.66797 5.39751 5.3988 1.66667 10.0013 1.66667ZM9.41214 7.05334L7.05464 9.41084C6.89841 9.56711 6.81065 9.77903 6.81065 10C6.81065 10.221 6.89841 10.4329 7.05464 10.5892L9.41214 12.9467C9.56841 13.1029 9.78033 13.1907 10.0013 13.1907C10.2223 13.1907 10.4342 13.1029 10.5905 12.9467L12.948 10.5892C13.1042 10.4329 13.192 10.221 13.192 10C13.192 9.77903 13.1042 9.56711 12.948 9.41084L10.5905 7.05334C10.4342 6.89711 10.2223 6.80935 10.0013 6.80935C9.78033 6.80935 9.56841 6.89711 9.41214 7.05334Z" fill="#E9CC3A"/>
+          </svg> 
+          <p class="header_item_balance_balance_tittle">0.00</p>
+        </div>
+        <button class="header_item_balance_balance_button">Deposit</button>
+        </div>
+      </div>
+    </div>
+    <div class="header_item">
+      <div class="header_item_uved">
+        <svg class="OpenNotification" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="4" fill="#272A2F"/>
+          <g clip-path="url(#clip0_5044_39105)">
+          <path d="M20.0002 11.6667C18.4531 11.6667 16.9694 12.2813 15.8754 13.3753C14.7815 14.4693 14.1669 15.953 14.1669 17.5001V20.4401C14.167 20.5694 14.1371 20.6969 14.0794 20.8126L12.6486 23.6734C12.5787 23.8132 12.5457 23.9685 12.5527 24.1246C12.5597 24.2807 12.6065 24.4324 12.6887 24.5654C12.7708 24.6983 12.8856 24.808 13.0221 24.8841C13.1586 24.9602 13.3123 25.0001 13.4686 25.0001H26.5319C26.6882 25.0001 26.8418 24.9602 26.9783 24.8841C27.1148 24.808 27.2296 24.6983 27.3118 24.5654C27.3939 24.4324 27.4407 24.2807 27.4478 24.1246C27.4548 23.9685 27.4218 23.8132 27.3519 23.6734L25.9219 20.8126C25.8639 20.697 25.8337 20.5694 25.8336 20.4401V17.5001C25.8336 15.953 25.219 14.4693 24.125 13.3753C23.0311 12.2813 21.5473 11.6667 20.0002 11.6667ZM20.0002 27.5001C19.483 27.5002 18.9785 27.34 18.5562 27.0415C18.1338 26.7431 17.8144 26.321 17.6419 25.8334H22.3586C22.1861 26.321 21.8666 26.7431 21.4443 27.0415C21.0219 27.34 20.5174 27.5002 20.0002 27.5001Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_5044_39105">
+          <rect width="20" height="20" fill="white" transform="translate(10 10)"/>
+          </clipPath>
+          </defs>
+          </svg>
+          
+
+        <div class="header_item_uved_rect" id="Notification">
+          <div class="header_item_uved_rect_content">
+            <div class="header_item_uved_rect_up">
+              <p class="header_item_uved_rect_up_tittle">Notifications</p>
+              <img src="./assets/img/modal/modal_close.svg" alt="" class="header_item_uved_rect_up_close">
+            </div>
+            <div class="header_item_uved_rect_main">
+              <div class="header_item_uved_rect_main_content">
+                <div class="header_item_uved_rect_main_items">
+                  <div class="header_item_uved_rect_main_item">
+                    <div class="header_item_uved_rect_main_item_content">
+                      <img src="./assets/img/modal/modal_motification_plus.svg" alt="" class="header_item_uved_rect_main_item_icon">
+                      <div class="header_item_uved_rect_main_item_texts">
+                        <p class="header_item_uved_rect_main_item_texts_tittle">You balance has been top up</p>
+                        <p class="header_item_uved_rect_main_item_texts_text">Your account balance has been replenished by 205 coins</p>
+                        <p class="header_item_uved_rect_main_item_texts_date">10.02.2024 20:20</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_item_uved_rect_main_item">
+                    <div class="header_item_uved_rect_main_item_content">
+                      <img src="./assets/img/modal/modal_motification_minus.svg" alt="" class="header_item_uved_rect_main_item_icon">
+                      <div class="header_item_uved_rect_main_item_texts">
+                        <p class="header_item_uved_rect_main_item_texts_tittle">The funds have been withdrawn</p>
+                        <p class="header_item_uved_rect_main_item_texts_text">205 сoins were sent to the selected payment method</p>
+                        <p class="header_item_uved_rect_main_item_texts_date">10.02.2024 20:20</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_item_uved_rect_main_item">
+                    <div class="header_item_uved_rect_main_item_content">
+                      <img src="./assets/img/modal/modal_motification_plus.svg" alt="" class="header_item_uved_rect_main_item_icon">
+                      <div class="header_item_uved_rect_main_item_texts">
+                        <p class="header_item_uved_rect_main_item_texts_tittle">You balance has been top up</p>
+                        <p class="header_item_uved_rect_main_item_texts_text">Your account balance has been replenished by 205 coins</p>
+                        <p class="header_item_uved_rect_main_item_texts_date">10.02.2024 20:20</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+<div class="header_item_uved_rect_main_clear">
+  <div class="header_item_uved_rect_main_clear_main">
+    <img src="./assets/img/header_notification_clear.svg" alt="" class="header_item_uved_rect_main_clear_icon">
+    <p class="header_item_uved_rect_main_clear_text">You don’t have notifications</p>
+  </div>
+</div>
+
+                
+                <img src="./assets/img/modal/modal_notification_bg.png" alt="" class="header_item_uved_rect_main_bg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header_item_line"></div>
+
+      <div class="header_item_user">
+        <div class="header_item_user_rect">
+         <div class="header_item_user_rect_avatar_rect">
+          <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+         </div>
+         <div class="header_item_user_rect_status_rect">
+          <img src="./assets/img/header_status_radiant.svg" alt="" class="header_item_user_rect_status_icon">
+         </div>
+        </div>
+        <div class="header_item_user_texts">
+          <p class="header_item_user_texts_tittle">Zabaikha</p>
+          <p class="header_item_user_texts_status">Radiant</p>
+        </div>
+        <div class="header_item_user_arrow_block">
+          <div class="header_item_user_arrow">
+            <svg class="header_item_user_arrow_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.40903 6.91083C9.5653 6.75461 9.77723 6.66684 9.9982 6.66684C10.2192 6.66684 10.4311 6.75461 10.5874 6.91083L15.3015 11.625C15.4533 11.7822 15.5373 11.9927 15.5354 12.2112C15.5335 12.4297 15.4459 12.6387 15.2914 12.7932C15.1369 12.9477 14.9279 13.0353 14.7094 13.0372C14.4909 13.0391 14.2804 12.9551 14.1232 12.8033L9.9982 8.67833L5.8732 12.8033C5.71603 12.9551 5.50553 13.0391 5.28703 13.0372C5.06853 13.0353 4.85952 12.9477 4.70502 12.7932C4.55051 12.6387 4.46287 12.4297 4.46097 12.2112C4.45907 11.9927 4.54307 11.7822 4.69486 11.625L9.40903 6.91083Z" fill="white"/>
+            </svg>
+          </div>
+
+          <div class="header_menu">
+<div class="header_menu_content">
+  <ul class="header_menu_items">
+    <li class="header_menu_item"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6667 10.8333V15C16.6667 15.663 16.4033 16.2989 15.9344 16.7678C15.4656 17.2366 14.8297 17.5 14.1667 17.5H10.8333V10.8333H16.6667ZM9.16667 10.8333V17.5H5.83334C5.17029 17.5 4.53441 17.2366 4.06557 16.7678C3.59673 16.2989 3.33333 15.663 3.33333 15V10.8333H9.16667ZM7.5 1.66667C7.97299 1.66611 8.44066 1.76646 8.87177 1.96104C9.30288 2.15561 9.68752 2.43993 10 2.795C10.3125 2.43993 10.6971 2.15561 11.1282 1.96104C11.5593 1.76646 12.027 1.66611 12.5 1.66667H12.9167C13.2482 1.66667 13.5661 1.79836 13.8006 2.03278C14.035 2.2672 14.1667 2.58515 14.1667 2.91667V3.33333C14.1667 3.94083 14.0042 4.51 13.7208 5H15.8333C16.2754 5 16.6993 5.17559 17.0118 5.48816C17.3244 5.80072 17.5 6.22464 17.5 6.66667V8.33333C17.5 8.63667 17.4192 8.92167 17.2767 9.16667H10.8333V6.66667C10.8333 6.44565 10.7455 6.23369 10.5893 6.07741C10.433 5.92113 10.221 5.83333 10 5.83333C9.77899 5.83333 9.56703 5.92113 9.41075 6.07741C9.25447 6.23369 9.16667 6.44565 9.16667 6.66667V9.16667H2.72333C2.57667 8.91346 2.49962 8.62595 2.5 8.33333V6.66667C2.5 6.22464 2.6756 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H6.27917C5.98621 4.49347 5.8324 3.91848 5.83334 3.33333V2.91667C5.83334 2.58515 5.96503 2.2672 6.19945 2.03278C6.43387 1.79836 6.75181 1.66667 7.08333 1.66667H7.5ZM7.5 3.33333C7.5 3.77536 7.6756 4.19928 7.98816 4.51184C8.30072 4.82441 8.72464 5 9.16667 5C9.16667 4.55797 8.99107 4.13405 8.67851 3.82149C8.36595 3.50893 7.94203 3.33333 7.5 3.33333ZM12.5 3.33333C12.058 3.33333 11.6341 3.50893 11.3215 3.82149C11.0089 4.13405 10.8333 4.55797 10.8333 5C11.2754 5 11.6993 4.82441 12.0118 4.51184C12.3244 4.19928 12.5 3.77536 12.5 3.33333Z" fill="#A7B1B9"/>
+    </svg> Rewards</a></li>
+    <li class="header_menu_item"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M10 10.8333C11.9967 10.8333 13.8125 11.4117 15.1483 12.2267C15.815 12.6333 16.385 13.1133 16.7967 13.635C17.2017 14.1475 17.5 14.7608 17.5 15.4167C17.5 16.1208 17.1575 16.6758 16.6642 17.0717C16.1975 17.4467 15.5817 17.695 14.9275 17.8683C13.6125 18.2158 11.8575 18.3333 10 18.3333C8.1425 18.3333 6.3875 18.2167 5.0725 17.8683C4.41833 17.695 3.8025 17.4467 3.33583 17.0717C2.84167 16.675 2.5 16.1208 2.5 15.4167C2.5 14.7608 2.79833 14.1475 3.20333 13.6342C3.615 13.1133 4.18417 12.6342 4.85167 12.2258C6.1875 11.4125 8.00417 10.8333 10 10.8333ZM10 1.66666C11.1051 1.66666 12.1649 2.10565 12.9463 2.88705C13.7277 3.66845 14.1667 4.72826 14.1667 5.83333C14.1667 6.9384 13.7277 7.99821 12.9463 8.77961C12.1649 9.56101 11.1051 10 10 10C8.89493 10 7.83512 9.56101 7.05372 8.77961C6.27232 7.99821 5.83333 6.9384 5.83333 5.83333C5.83333 4.72826 6.27232 3.66845 7.05372 2.88705C7.83512 2.10565 8.89493 1.66666 10 1.66666Z" fill="#A7B1B9"/>
+    </svg> My Profile</a></li>
+    <li class="header_menu_item"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M16.668 2.5C17.11 2.5 17.5339 2.67559 17.8465 2.98816C18.159 3.30072 18.3346 3.72464 18.3346 4.16667V15C18.3346 15.442 18.159 15.8659 17.8465 16.1785C17.5339 16.4911 17.11 16.6667 16.668 16.6667H15.8346C15.8346 16.8877 15.7468 17.0996 15.5906 17.2559C15.4343 17.4122 15.2223 17.5 15.0013 17.5C14.7803 17.5 14.5683 17.4122 14.412 17.2559C14.2558 17.0996 14.168 16.8877 14.168 16.6667H5.83464C5.83464 16.8877 5.74684 17.0996 5.59056 17.2559C5.43428 17.4122 5.22232 17.5 5.0013 17.5C4.78029 17.5 4.56833 17.4122 4.41205 17.2559C4.25577 17.0996 4.16797 16.8877 4.16797 16.6667H3.33464C2.89261 16.6667 2.46868 16.4911 2.15612 16.1785C1.84356 15.8659 1.66797 15.442 1.66797 15V4.16667C1.66797 3.72464 1.84356 3.30072 2.15612 2.98816C2.46868 2.67559 2.89261 2.5 3.33464 2.5H16.668ZM10.0013 5.83333C9.79719 5.83336 9.60019 5.9083 9.44766 6.04393C9.29513 6.17956 9.19768 6.36646 9.1738 6.56917L9.16797 6.66667V6.77167C8.33878 6.98586 7.62378 7.51083 7.17108 8.2378C6.71839 8.96478 6.56271 9.83804 6.7363 10.6767L6.7888 10.8933L6.69714 10.945C6.51163 11.0506 6.37373 11.2234 6.31188 11.4277C6.25002 11.632 6.26892 11.8523 6.36468 12.043C6.46044 12.2338 6.62577 12.3806 6.82655 12.453C7.02734 12.5255 7.24827 12.5181 7.4438 12.4325L7.5313 12.3883L7.62297 12.3358C7.93293 12.6522 8.303 12.9034 8.71143 13.0747C9.11986 13.246 9.55841 13.3339 10.0013 13.3333C10.832 13.3346 11.633 13.0245 12.2463 12.4642L12.3796 12.335L12.4713 12.3883C12.6555 12.4955 12.8737 12.528 13.0811 12.4793C13.2885 12.4305 13.4693 12.3042 13.5865 12.1263C13.7036 11.9483 13.7481 11.7322 13.7109 11.5224C13.6737 11.3127 13.5575 11.1251 13.3863 10.9983L13.3046 10.945L13.2138 10.8925C13.4453 10.0577 13.343 9.16567 12.9285 8.40499C12.514 7.64432 11.8199 7.07471 10.993 6.81667L10.8346 6.77167V6.66667C10.8346 6.44565 10.7468 6.23369 10.5906 6.07741C10.4343 5.92113 10.2223 5.83333 10.0013 5.83333ZM10.0013 8.33333C10.2804 8.33328 10.555 8.40332 10.8 8.537C11.045 8.67069 11.2524 8.86376 11.4034 9.09849C11.5544 9.33322 11.644 9.6021 11.664 9.88046C11.684 10.1588 11.6338 10.4378 11.518 10.6917L11.4346 10.85C11.2926 11.0897 11.0926 11.29 10.8532 11.4324C10.6137 11.5749 10.3423 11.6551 10.0639 11.6656C9.78544 11.6762 9.50879 11.6167 9.25925 11.4927C9.00972 11.3687 8.79525 11.1841 8.63547 10.9558L8.55047 10.8208C8.40697 10.5673 8.33246 10.2805 8.33436 9.98912C8.33626 9.69776 8.41451 9.41199 8.56131 9.1603C8.7081 8.90862 8.91831 8.69981 9.17098 8.55471C9.42364 8.40961 9.70994 8.33328 10.0013 8.33333Z" fill="#BDBDBD"/>
+    </svg> Vault</a></li>
+    <li class="header_menu_item"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M5.83203 2.50001V3.33334C5.83203 3.77537 6.00763 4.19929 6.32019 4.51185C6.63275 4.82441 7.05667 5.00001 7.4987 5.00001H12.4987C12.9407 5.00001 13.3646 4.82441 13.6772 4.51185C13.9898 4.19929 14.1654 3.77537 14.1654 3.33334V2.50001H14.9987C15.4407 2.50001 15.8646 2.6756 16.1772 2.98816C16.4898 3.30072 16.6654 3.72464 16.6654 4.16667V13.3333C16.6654 14.6594 16.1386 15.9312 15.2009 16.8689C14.2632 17.8066 12.9914 18.3333 11.6654 18.3333H4.9987C4.55667 18.3333 4.13275 18.1577 3.82019 17.8452C3.50763 17.5326 3.33203 17.1087 3.33203 16.6667V4.16667C3.33203 3.72464 3.50763 3.30072 3.82019 2.98816C4.13275 2.6756 4.55667 2.50001 4.9987 2.50001H5.83203ZM9.9987 11.6667H7.4987C7.27768 11.6667 7.06572 11.7545 6.90944 11.9108C6.75316 12.067 6.66536 12.279 6.66536 12.5C6.66536 12.721 6.75316 12.933 6.90944 13.0893C7.06572 13.2455 7.27768 13.3333 7.4987 13.3333H9.9987C10.2197 13.3333 10.4317 13.2455 10.588 13.0893C10.7442 12.933 10.832 12.721 10.832 12.5C10.832 12.279 10.7442 12.067 10.588 11.9108C10.4317 11.7545 10.2197 11.6667 9.9987 11.6667ZM12.4987 8.33334H7.4987C7.2863 8.33357 7.082 8.4149 6.92756 8.56071C6.77311 8.70652 6.68017 8.9058 6.66772 9.11783C6.65527 9.32987 6.72426 9.53865 6.86058 9.70153C6.99691 9.86441 7.19028 9.96909 7.4012 9.99417L7.4987 10H12.4987C12.7197 10 12.9317 9.91221 13.088 9.75593C13.2442 9.59965 13.332 9.38769 13.332 9.16667C13.332 8.94566 13.2442 8.7337 13.088 8.57742C12.9317 8.42114 12.7197 8.33334 12.4987 8.33334ZM11.6654 1.66667C11.8778 1.66691 12.0821 1.74824 12.2365 1.89405C12.391 2.03985 12.4839 2.23913 12.4963 2.45117C12.5088 2.6632 12.4398 2.87199 12.3035 3.03487C12.1672 3.19774 11.9738 3.30242 11.7629 3.32751L11.6654 3.33334H8.33203C8.11963 3.3331 7.91534 3.25177 7.76089 3.10596C7.60644 2.96016 7.5135 2.76088 7.50105 2.54884C7.48861 2.33681 7.55759 2.12802 7.69392 1.96514C7.83024 1.80227 8.02362 1.69759 8.23453 1.67251L8.33203 1.66667H11.6654Z" fill="#BDBDBD"/>
+    </svg> My Transactions</a></li>
+    <li class="header_menu_item"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M7.91797 10C8.91253 10 9.86636 9.60491 10.5696 8.90165C11.2729 8.19839 11.668 7.24456 11.668 6.25C11.668 5.25544 11.2729 4.30161 10.5696 3.59835C9.86636 2.89509 8.91253 2.5 7.91797 2.5C6.92341 2.5 5.96958 2.89509 5.26632 3.59835C4.56306 4.30161 4.16797 5.25544 4.16797 6.25C4.16797 7.24456 4.56306 8.19839 5.26632 8.90165C5.96958 9.60491 6.92341 10 7.91797 10ZM17.5013 7.5C17.5013 8.16304 17.2379 8.79893 16.7691 9.26777C16.3002 9.73661 15.6643 10 15.0013 10C14.3383 10 13.7024 9.73661 13.2335 9.26777C12.7647 8.79893 12.5013 8.16304 12.5013 7.5C12.5013 6.83696 12.7647 6.20107 13.2335 5.73223C13.7024 5.26339 14.3383 5 15.0013 5C15.6643 5 16.3002 5.26339 16.7691 5.73223C17.2379 6.20107 17.5013 6.83696 17.5013 7.5ZM7.91797 10.8333C9.5788 10.8333 11.0888 11.34 12.1988 12.055C12.7546 12.4133 13.2305 12.8358 13.5763 13.2967C13.9155 13.7508 14.168 14.2967 14.168 14.8808C14.168 15.51 13.8763 16.0142 13.448 16.3783C13.0438 16.72 12.5171 16.9417 11.973 17.0942C10.8788 17.4 9.4313 17.5 7.91797 17.5C6.40464 17.5 4.95714 17.4 3.8638 17.0942C3.3188 16.9417 2.79214 16.72 2.3888 16.3783C1.9588 16.015 1.66797 15.51 1.66797 14.8808C1.66797 14.2958 1.92047 13.7508 2.25964 13.2975C2.60547 12.8358 3.0813 12.4125 3.63714 12.0558C4.74714 11.3392 6.25714 10.8333 7.91797 10.8333ZM15.0013 10.8333C16.1013 10.8333 17.0996 11.1967 17.8346 11.7092C18.5196 12.1867 19.168 12.94 19.168 13.8092C19.168 14.2983 18.9571 14.7033 18.6363 14.9975C18.3388 15.2708 17.9621 15.4375 17.5996 15.5475C16.8746 15.7667 15.9413 15.8333 15.0013 15.8333H14.8321C14.9405 15.5433 15.0013 15.225 15.0013 14.8808C15.0013 14.0558 14.6488 13.3392 14.243 12.7975C13.838 12.2567 13.3013 11.7808 12.7021 11.3883C13.4138 11.0241 14.2018 10.8338 15.0013 10.8333Z" fill="#BDBDBD"/>
+    </svg> Affiliates</a></li>
+    <li class="header_menu_item"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0013 2.5C10.2223 2.5 10.4343 2.5878 10.5906 2.74408C10.7468 2.90036 10.8346 3.11232 10.8346 3.33333V4.16667H11.4713C11.7299 4.16668 11.985 4.22688 12.2163 4.3425L13.5313 5H16.668C16.889 5 17.1009 5.0878 17.2572 5.24408C17.4135 5.40036 17.5013 5.61232 17.5013 5.83333C17.5013 6.05435 17.4135 6.26631 17.2572 6.42259C17.1009 6.57887 16.889 6.66667 16.668 6.66667H16.3496L18.2463 10.4608C18.3046 10.5767 18.3346 10.7042 18.3346 10.8333C18.3346 11.7174 17.9834 12.5652 17.3583 13.1904C16.7332 13.8155 15.8854 14.1667 15.0013 14.1667C14.1172 14.1667 13.2694 13.8155 12.6443 13.1904C12.0192 12.5652 11.668 11.7174 11.668 10.8333C11.668 10.7042 11.698 10.5767 11.7563 10.4608L13.653 6.66667H13.5313C13.2727 6.66665 13.0176 6.60645 12.7863 6.49083L11.4713 5.83333H10.8346V15.8333H13.3346C13.5556 15.8333 13.7676 15.9211 13.9239 16.0774C14.0802 16.2337 14.168 16.4457 14.168 16.6667C14.168 16.8877 14.0802 17.0996 13.9239 17.2559C13.7676 17.4122 13.5556 17.5 13.3346 17.5H6.66797C6.44696 17.5 6.23499 17.4122 6.07871 17.2559C5.92243 17.0996 5.83464 16.8877 5.83464 16.6667C5.83464 16.4457 5.92243 16.2337 6.07871 16.0774C6.23499 15.9211 6.44696 15.8333 6.66797 15.8333H9.16797V5.83333H8.5313L7.2163 6.49083C6.98497 6.60645 6.72991 6.66665 6.4713 6.66667H6.34964L8.2463 10.4608C8.30426 10.5765 8.3345 10.704 8.33464 10.8333C8.33464 11.7174 7.98345 12.5652 7.35833 13.1904C6.7332 13.8155 5.88536 14.1667 5.0013 14.1667C4.11725 14.1667 3.2694 13.8155 2.64428 13.1904C2.01916 12.5652 1.66797 11.7174 1.66797 10.8333C1.66811 10.704 1.69835 10.5765 1.7563 10.4608L3.65297 6.66667H3.33464C3.11362 6.66667 2.90166 6.57887 2.74538 6.42259C2.5891 6.26631 2.5013 6.05435 2.5013 5.83333C2.5013 5.61232 2.5891 5.40036 2.74538 5.24408C2.90166 5.0878 3.11362 5 3.33464 5H6.4713L7.7863 4.3425C8.01763 4.22688 8.27269 4.16668 8.5313 4.16667H9.16797V3.33333C9.16797 3.11232 9.25577 2.90036 9.41205 2.74408C9.56833 2.5878 9.78029 2.5 10.0013 2.5Z" fill="#BDBDBD"/>
+    </svg> Fairness</a></li>
+    <li class="header_menu_item"><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M9.9987 2.5C10.2111 2.50024 10.4154 2.58157 10.5698 2.72737C10.7243 2.87318 10.8172 3.07246 10.8297 3.2845C10.8421 3.49653 10.7731 3.70532 10.6368 3.86819C10.5005 4.03107 10.3071 4.13575 10.0962 4.16083L9.9987 4.16667H5.83203C5.62792 4.16669 5.43092 4.24163 5.27839 4.37726C5.12586 4.5129 5.02841 4.69979 5.00453 4.9025L4.9987 5V15C4.99872 15.2041 5.07366 15.4011 5.20929 15.5536C5.34493 15.7062 5.53182 15.8036 5.73453 15.8275L5.83203 15.8333H9.58203C9.79443 15.8336 9.99872 15.9149 10.1532 16.0607C10.3076 16.2065 10.4006 16.4058 10.413 16.6178C10.4255 16.8299 10.3565 17.0386 10.2201 17.2015C10.0838 17.3644 9.89044 17.4691 9.67953 17.4942L9.58203 17.5H5.83203C5.19436 17.5 4.58077 17.2564 4.11681 16.8189C3.65286 16.3815 3.37361 15.7832 3.3362 15.1467L3.33203 15V5C3.332 4.36232 3.57564 3.74874 4.0131 3.28478C4.45057 2.82083 5.04879 2.54158 5.68536 2.50417L5.83203 2.5H9.9987ZM14.7545 7.05333L17.1112 9.41083C17.2674 9.56711 17.3552 9.77903 17.3552 10C17.3552 10.221 17.2674 10.4329 17.1112 10.5892L14.7545 12.9467C14.5982 13.1029 14.3861 13.1907 14.1651 13.1906C13.944 13.1905 13.732 13.1026 13.5758 12.9462C13.4195 12.7899 13.3318 12.5778 13.3319 12.3568C13.3319 12.1357 13.4198 11.9238 13.5762 11.7675L14.5104 10.8333H9.9987C9.77768 10.8333 9.56572 10.7455 9.40944 10.5893C9.25316 10.433 9.16536 10.221 9.16536 10C9.16536 9.77899 9.25316 9.56702 9.40944 9.41074C9.56572 9.25446 9.77768 9.16667 9.9987 9.16667H14.5104L13.5762 8.2325C13.4198 8.07624 13.3319 7.86427 13.3319 7.64321C13.3318 7.42215 13.4195 7.21012 13.5758 7.05375C13.732 6.89738 13.944 6.80949 14.1651 6.80941C14.3861 6.80934 14.5982 6.89708 14.7545 7.05333Z" fill="#BDBDBD"/>
+    </svg> Log out</a></li>
+  </ul>
+</div>
+          </div>
+        </div>
+        
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section class="main_sections">
+  <div class="main_section_left">
+    <div class="main_section_left_content">
+      <div class="main_section_left_up">
+        <p class="main_section_left_up_chat">Chat <img src="./assets/img/main_left_chat.svg" alt=""> 1042</p>
+        <div class="main_section_left_up_lang">
+          <div class="main_section_left_up_lang_selected">
+            <div class="main_section_left_up_lang_selected_content">
+              <img src="./assets/img/langs/eng.svg" alt="" class="main_section_left_up_lang_selected_icon">
+              <p class="main_section_left_up_lang_selected_tittle">Eng</p>
+              <img src="./assets/img/langs/arrow.svg" alt="" class="main_section_left_up_lang_selected_arrow">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_section_left_chat">
+
+        <img src="./assets/img/main_left_chat_up.png" alt="" class="main_section_left_chat_bg">
+<div class="main_section_left_chat_items">
+
+
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+  <div class="main_section_left_chat_item">
+    <div class="main_section_left_chat_item_avatar">
+
+      <div class="header_item_user_rect">
+        <div class="header_item_user_rect_avatar_rect">
+         <img src="./assets/img/main_avatar.png" alt="" class="header_item_user_rect_avatar">
+        </div>
+        <div class="header_item_user_rect_status_rect">
+         <img src="./assets/img/main_left_status_silver.png" alt="" class="header_item_user_rect_status_icon">
+        </div>
+       </div>
+    </div>
+    <div class="main_section_left_chat_item_texts">
+      <p class="main_section_left_chat_item_texts_tittle">xX_ShadowSl4y3r_69_Xx</p>
+      <p class="main_section_left_chat_item_texts_text">TY GUYS <3</p>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+      </div>
+
+      <div class="main_section_left_chat_send">
+        <div class="main_section_left_chat_send_content">
+          <input type="text" placeholder="Your message..." class="main_section_left_chat_send_input">
+          <div class="main_section_left_chat_send_icons">
+            <img src="./assets/img/main_left_chat_smile.svg" alt="" class="main_section_left_chat_send_icons_smile">
+            <img src="./assets/img/main_left_chat_send.svg" alt="" class="main_section_left_chat_send_icons_send">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main_section_right">
+    <div class="container">
+
+    <div class="main_section_right_content">
+      
+
+
+
+<div class="profile">
+  <div class="profile_up">
+    <div class="profile_up_left">
+      <div class="profile_up_left_rect">
+        <img src="./assets/img/profile/Avatar.png" alt="" class="profile_up_left_rect_avatar">
+      </div>
+      <div class="profile_up_left_texts">
+        <p class="profile_up_left_text_tittle">Zabiakha</p>
+        <p class="profile_up_left_text_status"><img src="./assets/img/rewards/silver.svg" alt=""> Iron III <span> (0/1500xp)</span></p>
+      </div>
+    </div>
+    <div class="profile_up_right">
+      <div class="profile_up_right_buttons">
+        <button class="profile_up_right_button OpenProfileSetting"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.30559 2.34044C8.13959 2.21905 7.94639 2.14016 7.74287 2.11067C7.53936 2.08118 7.33171 2.10199 7.13809 2.17127C6.23276 2.50292 5.39193 2.98932 4.65309 3.60877C4.49655 3.74168 4.37491 3.91087 4.2988 4.1016C4.22268 4.29232 4.1944 4.49877 4.21642 4.70294C4.27892 5.33044 4.16809 5.93627 3.86642 6.45794C3.56559 6.98044 3.09559 7.3796 2.52059 7.63877C2.33254 7.72206 2.16776 7.85015 2.04065 8.01184C1.91354 8.17352 1.82797 8.36388 1.79142 8.56627C1.62682 9.51474 1.62682 10.4845 1.79142 11.4329C1.86892 11.8804 2.17475 12.2046 2.52059 12.3613C3.09559 12.6196 3.56559 13.0196 3.86725 13.5413C4.16809 14.0638 4.27892 14.6688 4.21642 15.2963C4.17892 15.6729 4.30559 16.0996 4.65309 16.3904C5.39192 17.0099 6.23275 17.4963 7.13809 17.8279C7.33158 17.8971 7.53908 17.9179 7.74246 17.8884C7.94583 17.8589 8.13889 17.7801 8.30475 17.6588C8.81725 17.2904 9.39809 17.0829 10.0014 17.0829C10.6048 17.0829 11.1848 17.2904 11.6973 17.6588C12.0056 17.8804 12.4389 17.9838 12.8648 17.8279C13.7701 17.4963 14.6109 17.0099 15.3498 16.3904C15.6973 16.0996 15.8248 15.6738 15.7864 15.2963C15.7239 14.6688 15.8339 14.0629 16.1364 13.5413C16.4373 13.0188 16.9073 12.6204 17.4823 12.3613C17.8273 12.2054 18.1339 11.8804 18.2114 11.4329C18.376 10.4845 18.376 9.51474 18.2114 8.56627C18.1749 8.36388 18.0893 8.17352 17.9622 8.01184C17.8351 7.85015 17.6703 7.72206 17.4823 7.63877C16.9073 7.3796 16.4373 6.98044 16.1356 6.45794C15.8339 5.93627 15.7239 5.33044 15.7864 4.70294C15.8084 4.49878 15.7801 4.29235 15.7039 4.10164C15.6278 3.91093 15.5062 3.74172 15.3498 3.60877C14.6109 2.98932 13.7701 2.50292 12.8648 2.17127C12.6712 2.10213 12.4638 2.0814 12.2604 2.11089C12.057 2.14038 11.864 2.21918 11.6981 2.34044C11.1848 2.70794 10.6039 2.91627 10.0014 2.91627C9.39892 2.91627 8.81809 2.70877 8.30559 2.34044ZM7.50142 9.9996C7.50142 9.33656 7.76481 8.70068 8.23365 8.23184C8.70249 7.763 9.33838 7.4996 10.0014 7.4996C10.6645 7.4996 11.3003 7.763 11.7692 8.23184C12.238 8.70068 12.5014 9.33656 12.5014 9.9996C12.5014 10.6626 12.238 11.2985 11.7692 11.7674C11.3003 12.2362 10.6645 12.4996 10.0014 12.4996C9.33838 12.4996 8.70249 12.2362 8.23365 11.7674C7.76481 11.2985 7.50142 10.6626 7.50142 9.9996Z" fill="white"/>
+        </svg>Settings</button>
+        <button class="profile_up_right_button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5011 4.58298C12.501 3.9066 12.736 3.25122 13.1659 2.72901C13.5958 2.2068 14.1938 1.85023 14.8576 1.72032C15.5214 1.59041 16.2097 1.69525 16.8047 2.01688C17.3997 2.33852 17.8645 2.85696 18.1194 3.48347C18.3743 4.10998 18.4035 4.80561 18.2021 5.4513C18.0007 6.09699 17.5811 6.6526 17.0151 7.02304C16.4492 7.39348 15.7721 7.55571 15.0998 7.48197C14.4274 7.40823 13.8016 7.1031 13.3294 6.61881L9.7261 8.50798C9.9036 8.97048 10.0011 9.47465 10.0011 9.99965C10.0017 10.5095 9.90844 11.0152 9.7261 11.4913L13.3294 13.3805C13.8188 12.8792 14.4723 12.5707 15.1704 12.5116C15.8684 12.4525 16.5645 12.6466 17.1312 13.0585C17.6979 13.4703 18.0975 14.0724 18.2568 14.7546C18.4161 15.4369 18.3245 16.1536 17.9988 16.7739C17.6731 17.3942 17.135 17.8765 16.4829 18.1326C15.8309 18.3887 15.1084 18.4016 14.4476 18.1689C13.7868 17.9362 13.2319 17.4733 12.8842 16.8651C12.5366 16.2568 12.4195 15.5438 12.5544 14.8563L8.82526 12.9013C8.2477 13.4967 7.50559 13.9061 6.69395 14.0772C5.88231 14.2482 5.03808 14.1731 4.26936 13.8615C3.50064 13.5499 2.84242 13.016 2.37898 12.3281C1.91554 11.6401 1.66797 10.8295 1.66797 10.0001C1.66797 9.17059 1.91554 8.35999 2.37898 7.67207C2.84242 6.98414 3.50064 6.45019 4.26936 6.13858C5.03808 5.82698 5.88231 5.7519 6.69395 5.92297C7.50559 6.09404 8.2477 6.50346 8.82526 7.09881L12.5544 5.14298C12.5188 4.95845 12.5009 4.77092 12.5011 4.58298Z" fill="white"/>
+        </svg>Affiliates</button>
+        <button class="profile_up_right_button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M17.5793 5.62452C19.9959 9.80952 18.5618 15.1612 14.3768 17.5778C10.8909 19.5895 6.6001 18.9312 3.86593 16.2412C3.62955 16.0087 3.49522 15.6918 3.49249 15.3602C3.48975 15.0287 3.61884 14.7096 3.85135 14.4733C4.08385 14.2369 4.40074 14.1026 4.73228 14.0998C5.06383 14.0971 5.38289 14.2262 5.61926 14.4587C6.60335 15.426 7.87989 16.0405 9.2498 16.2062C10.6197 16.372 12.006 16.0797 13.1924 15.375C14.3788 14.6703 15.2986 13.5928 15.8084 12.3105C16.3182 11.0282 16.3893 9.61328 16.0106 8.28635C15.632 6.95943 14.8248 5.79512 13.715 4.97502C12.6053 4.15492 11.2553 3.72514 9.87568 3.75271C8.49605 3.78029 7.16433 4.26366 6.08822 5.12744C5.01211 5.99122 4.25211 7.18685 3.92676 8.52785L4.35843 8.41618C5.62676 8.08452 6.56176 9.59118 5.7001 10.5812L3.8251 12.737C3.13676 13.5278 1.80593 13.2587 1.5301 12.1987C1.04961 10.3453 1.1901 8.38551 1.93005 6.61964C2.67 4.85376 3.96857 3.37923 5.62676 2.42202C9.8126 0.00534917 15.1634 1.43952 17.5793 5.62452ZM10.0018 4.58285C10.3125 4.58286 10.6121 4.69862 10.8421 4.90753C11.0721 5.11645 11.2161 5.40355 11.2459 5.71285L11.2518 5.83285V9.48202L12.9684 11.1987C13.196 11.425 13.3278 11.7302 13.3365 12.0511C13.3452 12.372 13.2302 12.6839 13.0152 12.9223C12.8002 13.1606 12.5017 13.3071 12.1817 13.3314C11.8616 13.3557 11.5445 13.256 11.2959 13.0528L11.2009 12.967L9.1176 10.8837C8.91325 10.6793 8.78603 10.4105 8.7576 10.1228L8.75176 9.99952V5.83285C8.75176 5.50133 8.88346 5.18339 9.11788 4.94897C9.3523 4.71455 9.67024 4.58285 10.0018 4.58285Z" fill="white"/>
+        </svg>Transactions</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile_stats">
+    <div class="profile_stat_block">
+      <div class="profile_stat_block_content">
+        <p class="profile_stat_block_tittle">Total deposits</p>
+        <p class="profile_stat_block_balance"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+          <path d="M10.6693 1.66699C15.2718 1.66699 19.0026 5.39783 19.0026 10.0003C19.0026 14.6028 15.2718 18.3337 10.6693 18.3337C6.06677 18.3337 2.33594 14.6028 2.33594 10.0003C2.33594 5.39783 6.06677 1.66699 10.6693 1.66699ZM10.0801 7.05366L7.7226 9.41116C7.56638 9.56743 7.47861 9.77936 7.47861 10.0003C7.47861 10.2213 7.56638 10.4332 7.7226 10.5895L10.0801 12.947C10.2364 13.1032 10.4483 13.191 10.6693 13.191C10.8902 13.191 11.1022 13.1032 11.2584 12.947L13.6159 10.5895C13.7722 10.4332 13.8599 10.2213 13.8599 10.0003C13.8599 9.77936 13.7722 9.56743 13.6159 9.41116L11.2584 7.05366C11.1022 6.89743 10.8902 6.80967 10.6693 6.80967C10.4483 6.80967 10.2364 6.89743 10.0801 7.05366Z" fill="#E9CC3A"/>
+        </svg> 0.00</p>
+      </div>
+    </div>
+
+    <div class="profile_stat_block">
+      <div class="profile_stat_block_content">
+        <p class="profile_stat_block_tittle">Total withdraws</p>
+        <p class="profile_stat_block_balance"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+          <path d="M10.6693 1.66699C15.2718 1.66699 19.0026 5.39783 19.0026 10.0003C19.0026 14.6028 15.2718 18.3337 10.6693 18.3337C6.06677 18.3337 2.33594 14.6028 2.33594 10.0003C2.33594 5.39783 6.06677 1.66699 10.6693 1.66699ZM10.0801 7.05366L7.7226 9.41116C7.56638 9.56743 7.47861 9.77936 7.47861 10.0003C7.47861 10.2213 7.56638 10.4332 7.7226 10.5895L10.0801 12.947C10.2364 13.1032 10.4483 13.191 10.6693 13.191C10.8902 13.191 11.1022 13.1032 11.2584 12.947L13.6159 10.5895C13.7722 10.4332 13.8599 10.2213 13.8599 10.0003C13.8599 9.77936 13.7722 9.56743 13.6159 9.41116L11.2584 7.05366C11.1022 6.89743 10.8902 6.80967 10.6693 6.80967C10.4483 6.80967 10.2364 6.89743 10.0801 7.05366Z" fill="#E9CC3A"/>
+        </svg> 0.00</p>
+      </div>
+    </div>
+
+    <div class="profile_stat_block">
+      <div class="profile_stat_block_content">
+        <p class="profile_stat_block_tittle">Total Wagered</p>
+        <p class="profile_stat_block_balance"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+          <path d="M10.6693 1.66699C15.2718 1.66699 19.0026 5.39783 19.0026 10.0003C19.0026 14.6028 15.2718 18.3337 10.6693 18.3337C6.06677 18.3337 2.33594 14.6028 2.33594 10.0003C2.33594 5.39783 6.06677 1.66699 10.6693 1.66699ZM10.0801 7.05366L7.7226 9.41116C7.56638 9.56743 7.47861 9.77936 7.47861 10.0003C7.47861 10.2213 7.56638 10.4332 7.7226 10.5895L10.0801 12.947C10.2364 13.1032 10.4483 13.191 10.6693 13.191C10.8902 13.191 11.1022 13.1032 11.2584 12.947L13.6159 10.5895C13.7722 10.4332 13.8599 10.2213 13.8599 10.0003C13.8599 9.77936 13.7722 9.56743 13.6159 9.41116L11.2584 7.05366C11.1022 6.89743 10.8902 6.80967 10.6693 6.80967C10.4483 6.80967 10.2364 6.89743 10.0801 7.05366Z" fill="#E9CC3A"/>
+        </svg> 0.00</p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="profile_sections_buttons">
+  <button class="profile_sections_button profile_sections_button_active" id="profile_button_all">All</button>
+  <button class="profile_sections_button" id="profile_button_battles"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.98719 2.82012L8.40366 4.6324L5.07032 8.89721L2.87016 7.02056C2.68017 6.85851 2.57031 6.61844 2.57031 6.3653V3.35296C2.57031 2.88188 2.94341 2.5 3.40365 2.5H6.33646C6.58962 2.5 6.82905 2.61779 6.98719 2.82012ZM17.5703 3.35296C17.5703 2.88188 17.1972 2.5 16.737 2.5H13.7985C13.5486 2.5 13.3118 2.61483 13.1536 2.81283L6.05896 11.6883L4.82621 10.4265C4.50078 10.0934 3.97314 10.0934 3.6477 10.4265C3.32226 10.7596 3.32226 11.2996 3.6477 11.6328L4.8977 12.9122L3.15954 14.6913C2.83411 15.0244 2.83411 15.5645 3.15955 15.8976L4.48104 17.2502C4.80647 17.5833 5.33411 17.5833 5.65955 17.2502L7.39771 15.4711L8.64771 16.7505C8.97315 17.0836 9.50078 17.0836 9.82622 16.7505C10.1517 16.4174 10.1517 15.8774 9.82622 15.5442L8.59348 14.2825L17.2647 7.02076C17.4581 6.85876 17.5703 6.61644 17.5703 6.36061V3.35296ZM12.0036 14.7144L14.481 17.2502C14.8065 17.5833 15.3341 17.5833 15.6595 17.2502L16.981 15.8976C17.3065 15.5645 17.3065 15.0244 16.981 14.6913L14.7661 12.4242L12.0036 14.7144Z" fill="#A7B1B9"/>
+  </svg> Battles</button>
+  <button class="profile_sections_button" id="profile_button_mines"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8448 1.41156C10.4002 1.29244 9.94785 1.5391 9.8344 1.96248C9.80275 2.08062 9.80082 2.20003 9.82416 2.3134C9.32321 2.47516 8.89881 2.82058 8.65889 3.2908L8.21617 3.17218C7.54934 2.9935 6.87081 3.36348 6.70065 3.99856L4.2357 13.1979C4.06553 13.8329 4.46816 14.4926 5.13499 14.6713L10.7696 16.1811C11.4364 16.3597 12.1149 15.9898 12.2851 15.3547L14.75 6.15539C14.9202 5.52031 14.5176 4.86063 13.8507 4.68195L13.408 4.56333C13.4235 4.26394 13.3674 3.96966 13.2514 3.6997L14.4586 4.02319C15.3477 4.26142 15.8846 5.141 15.6577 5.98777L14.0144 12.1206C13.9009 12.544 14.1693 12.9838 14.6139 13.1029C15.0585 13.222 15.5108 12.9754 15.6243 12.552L17.2675 6.41913C17.7213 4.72559 16.6477 2.96644 14.8694 2.48997L10.8448 1.41156ZM11.5255 8.0428C11.4085 7.851 11.1537 7.78272 10.9564 7.89029L9.92559 8.45236L9.31394 7.4502C9.19687 7.2584 8.94204 7.19012 8.74476 7.29769L8.07119 7.66498C7.87391 7.77255 7.80888 8.01525 7.92595 8.20705L8.5376 9.2092L7.50682 9.77127C7.30954 9.87884 7.24451 10.1215 7.36157 10.3133L7.76125 10.9682C7.87832 11.16 8.13315 11.2283 8.33043 11.1207L9.36121 10.5586L9.97286 11.5608C10.0899 11.7526 10.3448 11.8209 10.542 11.7133L11.2156 11.346C11.4129 11.2385 11.4779 10.9958 11.3608 10.804L10.7492 9.8018L11.78 9.23974C11.9773 9.13216 12.0423 8.88947 11.9252 8.69766L11.5255 8.0428ZM4.52711 15.3301C4.08256 15.2109 3.63021 15.4576 3.51676 15.881C3.40332 16.3044 3.67173 16.7442 4.11629 16.8633L10.5558 18.5887C11.0003 18.7079 11.4527 18.4612 11.5661 18.0378C11.6796 17.6144 11.4112 17.1746 10.9666 17.0555L4.52711 15.3301Z" fill="#A7B1B9"/>
+  </svg> Mines</button>
+  <button class="profile_sections_button" id="profile_button_upgrade"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.12847L9.69582 5.08193C9.88255 4.97269 10.1174 4.97269 10.3042 5.08193L17.2208 9.12847C17.3942 9.22992 17.5 9.41044 17.5 9.60499V11.8861C17.5 12.3222 17.0012 12.59 16.6125 12.3626L10.3042 8.67196C10.1174 8.56272 9.88255 8.56272 9.69582 8.67196L3.38751 12.3626C2.99881 12.59 2.5 12.3222 2.5 11.8861V9.60499C2.5 9.41044 2.60576 9.22992 2.77915 9.12847ZM6.0492 13.3665L9.7992 11.392C9.92424 11.3261 10.0758 11.3261 10.2008 11.392L13.9508 13.3665C14.0839 13.4366 14.1667 13.5705 14.1667 13.716V14.6005C14.1667 14.9039 13.8269 15.0963 13.5492 14.9501L10.2008 13.187C10.0758 13.1212 9.92424 13.1212 9.7992 13.187L6.4508 14.9501C6.17311 15.0963 5.83333 14.9039 5.83333 14.6005V13.716C5.83333 13.5705 5.91606 13.4366 6.0492 13.3665Z" fill="#A7B1B9"/>
+  </svg> Upgrade</button>
+  <button class="profile_sections_button" id="profile_button_cases"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.21094 7.03671L18.2109 7.03671L16.9938 4.03146C16.823 3.60962 16.4093 3.33301 15.9493 3.33301L5.4726 3.33301C5.01258 3.33301 4.59891 3.60962 4.42806 4.03146L3.21094 7.03671ZM3.21094 8.51819H9.21094V10.7404C9.21094 11.1495 9.54672 11.4812 9.96094 11.4812H11.4609C11.8752 11.4812 12.2109 11.1495 12.2109 10.7404V8.51819H18.2109V15.5552C18.2109 16.1689 17.7073 16.6663 17.0859 16.6663H4.33594C3.71462 16.6663 3.21094 16.1689 3.21094 15.5552V8.51819Z" fill="#A7B1B9"/>
+  </svg> Cases</button>
+  <button class="profile_sections_button" id="profile_button_coinflip"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+    <path d="M7.50985 4.94857C9.38046 3.86857 11.3019 3.20665 12.9198 3.03562C13.7271 2.95057 14.5 2.98259 15.1648 3.17901C15.7794 3.36016 16.3423 3.69524 16.7139 4.23707L16.8101 4.39034L18.4767 7.27709C18.8426 7.91073 18.8681 8.62827 18.7031 9.30759C18.5409 9.98151 18.1829 10.6664 17.7048 11.3235C16.7478 12.6391 15.2138 13.9722 13.3432 15.0522C11.4726 16.1322 9.55109 16.7941 7.93319 16.9651C7.12589 17.0502 6.353 17.0182 5.68822 16.8218C5.07364 16.6406 4.51068 16.3055 4.13916 15.7637L4.04297 15.6104L2.3763 12.7237C2.01047 12.09 1.98495 11.3725 2.14989 10.6932C2.31217 10.0193 2.67016 9.33432 3.14819 8.67728C4.10526 7.36165 5.63923 6.02857 7.50985 4.94857ZM16.65 7.44647C16.4819 7.78026 16.274 8.11194 16.0382 8.43673C15.0811 9.75236 13.5471 11.0854 11.6765 12.1654C9.8059 13.2454 7.88443 13.9074 6.26652 14.0784C5.88024 14.1212 5.49115 14.1328 5.10301 14.1131L5.48634 14.7771C5.58093 14.9409 5.77435 15.1093 6.15978 15.2235C6.55049 15.3386 7.08868 15.3791 7.75795 15.3083C9.09463 15.1668 10.7937 14.5997 12.5098 13.6088C14.2267 12.6176 15.5667 11.4302 16.3576 10.3433C16.7535 9.79908 16.9875 9.31274 17.0832 8.91685C17.1777 8.52551 17.1279 8.27425 17.0333 8.11042L16.65 7.44647Z" fill="#A7B1B9"/>
+  </svg> Coinflip</button>
+  <button class="profile_sections_button" id="profile_button_towers"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+    <g clip-path="url(#clip0_5068_45035)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.23825 3.33301H4.00652C3.80923 3.33301 3.49802 3.41105 3.35851 3.54997C3.219 3.68888 3.14063 3.87729 3.14063 4.07375V7.32856C3.14056 7.6212 3.22753 7.90731 3.39057 8.15079L4.37847 9.62634C4.54151 9.86982 4.62849 10.1559 4.62842 10.4486V15.9256C4.62842 16.1221 4.7068 16.3105 4.8463 16.4494C4.98581 16.5883 5.17502 16.6663 5.37232 16.6663H8.97399V13.333C8.97399 12.891 9.14959 12.4671 9.46215 12.1545C9.77471 11.8419 10.1986 11.6663 10.6407 11.6663C11.0827 11.6663 11.5066 11.8419 11.8192 12.1545C12.1317 12.4671 12.3073 12.891 12.3073 13.333V16.6663H15.9089C16.1062 16.6663 16.2954 16.5883 16.435 16.4494C16.5745 16.3105 16.6528 16.1221 16.6528 15.9256V10.4486C16.6528 10.1559 16.7397 9.86982 16.9028 9.62634L17.8907 8.15079C18.0537 7.90731 18.1407 7.6212 18.1406 7.32856V4.07375C18.1406 3.87729 18.0623 3.68888 17.9227 3.54997C17.7832 3.41105 17.594 3.33301 17.3967 3.33301H15.165C14.9677 3.33301 14.7785 3.41105 14.639 3.54997C14.4995 3.68888 14.4211 3.87729 14.4211 4.07375V5.55523H12.1894V4.07375C12.1894 3.87729 12.1111 3.68888 11.9715 3.54997C11.832 3.41105 11.6428 3.33301 11.4455 3.33301H9.95774C9.76044 3.33301 9.57123 3.41105 9.43172 3.54997C9.29221 3.68888 9.21384 3.87729 9.21384 4.07375V5.55523H6.98215V4.07375C6.98215 3.87729 6.90377 3.68888 6.76426 3.54997C6.62475 3.41105 6.43554 3.33301 6.23825 3.33301Z" fill="#A7B1B9"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_5068_45035">
+        <rect width="20" height="20" fill="white" transform="translate(0.640625)"/>
+      </clipPath>
+    </defs>
+  </svg> Towers</button>
+</div>
+
+
+
+<div class="profile_sections_sections">
+  <div class="profile_sections_section" id="profile_section_all">
+
+    <p class="profile_section_all_main_total">Total gain: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+      <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+    </svg> <span>3,294.04</span></p>
+
+    <div class="profile_section_all_main">
+
+
+
+<div class="profile_section_all_main_tabble">
+  <table class="profile_section_all_main_tabble_main">
+    <thead>
+      <t>
+        <td class="profile_section_all_main_tabble_main_tittle">ID</td>
+        <td class="profile_section_all_main_tabble_main_tittle">GAMEMODE</td>
+        <td class="profile_section_all_main_tabble_main_tittle">TYPE</td>
+        <td class="profile_section_all_main_tabble_main_tittle">DATE</td>
+        <td class="profile_section_all_main_tabble_main_tittle">SUM</td>
+        <td class="profile_section_all_main_tabble_main_tittle">STATUS</td>
+      </t>
+
+</thead>
+<tbody>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_red">x0.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_red">x0.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77915 9.62847L9.69582 5.58193C9.88255 5.47269 10.1174 5.47269 10.3042 5.58193L17.2208 9.62847C17.3942 9.72992 17.5 9.91044 17.5 10.105V12.3861C17.5 12.8222 17.0012 13.09 16.6125 12.8626L10.3042 9.17196C10.1174 9.06272 9.88255 9.06272 9.69582 9.17196L3.38751 12.8626C2.99881 13.09 2.5 12.8222 2.5 12.3861V10.105C2.5 9.91044 2.60576 9.72992 2.77915 9.62847ZM6.0492 13.8665L9.7992 11.892C9.92424 11.8261 10.0758 11.8261 10.2008 11.892L13.9508 13.8665C14.0839 13.9366 14.1667 14.0705 14.1667 14.216V15.1005C14.1667 15.4039 13.8269 15.5963 13.5492 15.4501L10.2008 13.687C10.0758 13.6212 9.92424 13.6212 9.7992 13.687L6.4508 15.4501C6.17311 15.5963 5.83333 15.4039 5.83333 15.1005V14.216C5.83333 14.0705 5.91606 13.9366 6.0492 13.8665Z" fill="#4D88FF"/>
+            </svg> Upgrade
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 0
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 0
+          </p>
+          </td>
+      </tr>
+
+
+
+      
+
+     
+
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<div class="profile_section_all_main_clear_main" style="display: none;">
+  <div class="profile_section_all_main_clear">
+    <img src="./assets/img/header_notification_clear.svg" alt="" class="profile_section_all_main_clear_clear">
+    <p class="profile_section_all_main_clear_tittle">Your game history is empty</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <div class="profile_sections_section" id="profile_section_battles">2</div>
+  <div class="profile_sections_section" id="profile_section_mines">
+    <p class="profile_section_all_main_total">Total gain: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+      <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+    </svg> <span>4.04</span></p>
+
+    <div class="profile_section_all_main">
+
+
+
+<div class="profile_section_all_main_tabble">
+  <table class="profile_section_all_main_tabble_main">
+    <thead>
+      <t>
+        <td class="profile_section_all_main_tabble_main_tittle">ID</td>
+        <td class="profile_section_all_main_tabble_main_tittle">GAMEMODE</td>
+        <td class="profile_section_all_main_tabble_main_tittle">TYPE</td>
+        <td class="profile_section_all_main_tabble_main_tittle">DATE</td>
+        <td class="profile_section_all_main_tabble_main_tittle">SUM</td>
+        <td class="profile_section_all_main_tabble_main_tittle">STATUS</td>
+      </t>
+
+</thead>
+<tbody>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5596 1.91156C10.115 1.79244 9.66269 2.0391 9.54925 2.46248C9.51759 2.58062 9.51567 2.70003 9.539 2.8134C9.03806 2.97516 8.61366 3.32058 8.37374 3.7908L7.93102 3.67218C7.26418 3.4935 6.58566 3.86348 6.41549 4.49856L3.95055 13.6979C3.78038 14.3329 4.183 14.9926 4.84984 15.1713L10.4844 16.6811C11.1512 16.8597 11.8298 16.4898 11.9999 15.8547L14.4649 6.65539C14.635 6.02031 14.2324 5.36063 13.5656 5.18195L13.1229 5.06333C13.1384 4.76394 13.0823 4.46966 12.9662 4.1997L14.1735 4.52319C15.0626 4.76142 15.5994 5.641 15.3725 6.48777L13.7292 12.6206C13.6158 13.044 13.8842 13.4838 14.3287 13.6029C14.7733 13.722 15.2257 13.4754 15.3391 13.052L16.9824 6.91913C17.4362 5.22559 16.3625 3.46644 14.5843 2.98997L10.5596 1.91156ZM11.2404 8.5428C11.1233 8.351 10.8685 8.28272 10.6712 8.39029L9.64043 8.95236L9.02878 7.9502C8.91172 7.7584 8.65689 7.69012 8.4596 7.79769L7.78604 8.16498C7.58876 8.27255 7.52373 8.51525 7.64079 8.70705L8.25244 9.7092L7.22166 10.2713C7.02438 10.3788 6.95935 10.6215 7.07642 10.8133L7.4761 11.4682C7.59316 11.66 7.84799 11.7283 8.04528 11.6207L9.07605 11.0586L9.6877 12.0608C9.80476 12.2526 10.0596 12.3209 10.2569 12.2133L10.9304 11.846C11.1277 11.7385 11.1928 11.4958 11.0757 11.304L10.464 10.3018L11.4948 9.73974C11.6921 9.63216 11.7571 9.38947 11.6401 9.19766L11.2404 8.5428ZM4.24195 15.8301C3.7974 15.7109 3.34505 15.9576 3.2316 16.381C3.11816 16.8044 3.38658 17.2442 3.83113 17.3633L10.2706 19.0887C10.7152 19.2079 11.1675 18.9612 11.281 18.5378C11.3944 18.1144 11.126 17.6746 10.6815 17.5555L4.24195 15.8301Z" fill="#4D88FF"/>
+            </svg> Mines
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 20
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 200
+          </p>
+          </td>
+      </tr>
+
+      <tr class="profile_section_all_main_tabble_main_line">
+        <td class="profile_section_all_main_tabble_main_text">#49195</td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <div class="profile_section_all_main_tabble_main_gamemode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5596 1.91156C10.115 1.79244 9.66269 2.0391 9.54925 2.46248C9.51759 2.58062 9.51567 2.70003 9.539 2.8134C9.03806 2.97516 8.61366 3.32058 8.37374 3.7908L7.93102 3.67218C7.26418 3.4935 6.58566 3.86348 6.41549 4.49856L3.95055 13.6979C3.78038 14.3329 4.183 14.9926 4.84984 15.1713L10.4844 16.6811C11.1512 16.8597 11.8298 16.4898 11.9999 15.8547L14.4649 6.65539C14.635 6.02031 14.2324 5.36063 13.5656 5.18195L13.1229 5.06333C13.1384 4.76394 13.0823 4.46966 12.9662 4.1997L14.1735 4.52319C15.0626 4.76142 15.5994 5.641 15.3725 6.48777L13.7292 12.6206C13.6158 13.044 13.8842 13.4838 14.3287 13.6029C14.7733 13.722 15.2257 13.4754 15.3391 13.052L16.9824 6.91913C17.4362 5.22559 16.3625 3.46644 14.5843 2.98997L10.5596 1.91156ZM11.2404 8.5428C11.1233 8.351 10.8685 8.28272 10.6712 8.39029L9.64043 8.95236L9.02878 7.9502C8.91172 7.7584 8.65689 7.69012 8.4596 7.79769L7.78604 8.16498C7.58876 8.27255 7.52373 8.51525 7.64079 8.70705L8.25244 9.7092L7.22166 10.2713C7.02438 10.3788 6.95935 10.6215 7.07642 10.8133L7.4761 11.4682C7.59316 11.66 7.84799 11.7283 8.04528 11.6207L9.07605 11.0586L9.6877 12.0608C9.80476 12.2526 10.0596 12.3209 10.2569 12.2133L10.9304 11.846C11.1277 11.7385 11.1928 11.4958 11.0757 11.304L10.464 10.3018L11.4948 9.73974C11.6921 9.63216 11.7571 9.38947 11.6401 9.19766L11.2404 8.5428ZM4.24195 15.8301C3.7974 15.7109 3.34505 15.9576 3.2316 16.381C3.11816 16.8044 3.38658 17.2442 3.83113 17.3633L10.2706 19.0887C10.7152 19.2079 11.1675 18.9612 11.281 18.5378C11.3944 18.1144 11.126 17.6746 10.6815 17.5555L4.24195 15.8301Z" fill="#4D88FF"/>
+            </svg> Mines
+          </div></td>
+        <td class="profile_section_all_main_tabble_main_text">10.02.2024 20:11</td>
+        <td class="profile_section_all_main_tabble_main_text profile_section_all_main_tabble_main_status profile_section_all_main_tabble_main_status_green">x10.00</td>
+        <td class="profile_section_all_main_tabble_main_text"><p class="profile_section_all_main_tabble_main_coin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+          </svg> 20
+        </p></td>
+        <td class="profile_section_all_main_tabble_main_text">
+          <p class="profile_section_all_main_tabble_main_coin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M10.0013 2.16699C14.6038 2.16699 18.3346 5.89783 18.3346 10.5003C18.3346 15.1028 14.6038 18.8337 10.0013 18.8337C5.3988 18.8337 1.66797 15.1028 1.66797 10.5003C1.66797 5.89783 5.3988 2.16699 10.0013 2.16699ZM9.41214 7.55366L7.05464 9.91116C6.89841 10.0674 6.81065 10.2794 6.81065 10.5003C6.81065 10.7213 6.89841 10.9332 7.05464 11.0895L9.41214 13.447C9.56841 13.6032 9.78033 13.691 10.0013 13.691C10.2223 13.691 10.4342 13.6032 10.5905 13.447L12.948 11.0895C13.1042 10.9332 13.192 10.7213 13.192 10.5003C13.192 10.2794 13.1042 10.0674 12.948 9.91116L10.5905 7.55366C10.4342 7.39743 10.2223 7.30967 10.0013 7.30967C9.78033 7.30967 9.56841 7.39743 9.41214 7.55366Z" fill="#E9CC3A"/>
+            </svg> 200
+          </p>
+          </td>
+      </tr>
+
+
+
+      
+
+     
+
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<div class="profile_section_all_main_clear_main" style="display: none;">
+  <div class="profile_section_all_main_clear">
+    <img src="./assets/img/header_notification_clear.svg" alt="" class="profile_section_all_main_clear_clear">
+    <p class="profile_section_all_main_clear_tittle">Your game history is empty</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <div class="profile_sections_section" id="profile_section_upgrade">4</div>
+  <div class="profile_sections_section" id="profile_section_cases">5</div>
+  <div class="profile_sections_section" id="profile_section_coinflip">6</div>
+  <div class="profile_sections_section" id="profile_section_towers">7</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+  <div class="footer_container">
+<div class="footer_items">
+  <div class="footer_item">
+    <a href="#!" class="footer_item_logo"><img src="./assets/img/header_logo.svg" alt=""></a>
+    <div class="footer_item_infos">
+      <p class="footer_item_info">The Premier CSGO Gambling and case battle site.</p>
+      <p class="footer_item_info">Clash.gg is owned and operated by Rust Clash Entertainment Ltd located at Thermistokli Dervi, 48, 3rd Floor, Office 306, 1065, Nicosia, Cyprus</p>
+      <p class="footer_item_info">© All rights reserved 2021 - 2024</p>
+    </div>
+  </div>
+  <div class="footer_item">
+    <div class="footer_item_navs">
+      <ul class="footer_item_nav">
+        <li class="footer_item_nav_tittle">Information</li>
+        <li class="footer_item_nav_link"><a href="#!">Fairness</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Questions</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Terms & Service</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Privacy Policy</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Legal Opinion</a></li>
+        <li class="footer_item_nav_link"><a href="#!">AMP Policy</a></li>
+        <li class="footer_item_nav_link"><a href="#!">About us</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Contact us</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Disclaimer</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Code of Etgics</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Editorial Policy</a></li>
+      </ul>
+      <ul class="footer_item_nav">
+        <li class="footer_item_nav_tittle">Games</li>
+        <li class="footer_item_nav_link"><a href="#!">Case Battles</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Cases</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Mines</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Upgrade</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Towers</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Coinflip</a></li>
+      </ul>
+      <ul class="footer_item_nav">
+        <li class="footer_item_nav_tittle">Additional</li>
+        <li class="footer_item_nav_link"><a href="#!">Case Creator</a></li>
+        <li class="footer_item_nav_link"><a href="#!">10K Daily Race</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Affiliates</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Rewards</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Game Responsibly</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Free to Play</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Blog</a></li>
+      </ul>
+      <ul class="footer_item_nav">
+        <li class="footer_item_nav_tittle">Social</li>
+        <li class="footer_item_nav_link"><a href="#!">Twitter</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Discord</a></li>
+        <li class="footer_item_nav_link"><a href="#!">Kick</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+
+</section>
+
+
+
+
+
+<script>
+$(document).ready(function() {
+    // Hide all sections except the first one
+    $('.profile_sections_section').hide();
+    $('.profile_sections_section').first().show();
+    $('.profile_sections_button').first().addClass('profile_sections_button_active');
+
+    // Click event for buttons
+    $('.profile_sections_button').on('click', function() {
+        // Remove active class from all buttons
+        $('.profile_sections_button').removeClass('profile_sections_button_active');
+
+        // Hide all sections
+        $('.profile_sections_section').hide();
+
+        // Add active class to the clicked button
+        $(this).addClass('profile_sections_button_active');
+
+        // Show the corresponding section
+        const sectionId = $(this).attr('id').replace('profile_button_', 'profile_section_');
+        $('#' + sectionId).show();
+    });
+});
+</script>
+
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

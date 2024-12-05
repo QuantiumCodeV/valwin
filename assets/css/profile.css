@@ -1,0 +1,421 @@
+.profile {
+    width: 100%;
+    height: auto;
+}
+.profile_up {
+    display: flex;
+    align-items: center;
+}
+.profile_up_left {
+    display: flex;
+    align-items: center;
+}
+.profile_up_left_rect {
+    display: flex;
+width: 80px;
+height: 80px;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+border: 2px solid #B3BCB4;
+}
+.profile_up_left_rect_avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 3px;
+}
+.profile_up_left_texts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.profile_up_left_text_tittle {
+    color: #FFF;
+text-align: left;
+/* DemiBold/H4 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.44px;
+}
+.profile_up_left_text_status {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+text-align: center;
+margin-top: 4.5px;
+/* Medium/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 22.5px */
+}
+.profile_up_left_text_status img{
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.profile_up_left_text_status span{
+    color: #A7B1B9;
+/* Medium/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+margin-left: 5px;
+}
+.profile_up_right {
+    margin-left: auto;
+}
+.profile_up_right_buttons {
+    display: flex;
+    align-items: center;
+}
+.profile_up_right_button {
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 4px;
+background: #272A2F;
+padding: 12px 16px;
+color: #FFF;
+margin-right: 8px;
+
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+}
+
+.profile_up_right_button:last-child{
+    margin-right: 0px;
+}
+
+.profile_up_right_button svg{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.profile_up_right_button:hover{
+    opacity: .5;
+}
+
+
+.profile_stats {
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.profile_stat_block {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+background:#1B1D20;
+margin-right: 8px;
+}
+.profile_stat_block:last-child{
+    margin-right: 0px;
+}
+.profile_stat_block_content {
+    padding: 12px 16px;
+}
+.profile_stat_block_tittle {
+    color: #A7B1B9;
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+text-align: center;
+}
+.profile_stat_block_balance {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    justify-content: center;
+    color: #FFF;
+/* DemiBold/H4 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.44px;
+}
+
+.profile_stat_block_balance svg{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+
+.profile_sections_buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    padding: 4px;
+    border-radius: 4px;
+background: #1B1D20;
+}
+.profile_sections_button {
+    color: #A7B1B9;
+display: flex;
+align-items: center;
+/* DemiBold/Body 1 */
+justify-content: center;
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+width: 100%;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+padding: 8px 23px;
+background: transparent;
+border: none;
+outline: none;
+cursor: pointer;
+transition: all .5s;
+}
+
+.profile_sections_button svg{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.profile_sections_button:hover{
+    opacity: .5;
+}
+
+.profile_sections_button_active{
+    border-radius: 2px;
+background: #272A2F;
+}
+
+
+
+
+.profile_section_all_main {
+    width: 100%;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_section_all_main_clear {
+    display: flex;
+    flex-direction: column;
+}
+.profile_section_all_main_clear_main{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_section_all_main_clear_clear {
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+}
+.profile_section_all_main_clear_tittle {
+    margin-top: 10px;
+    color: #A7B1B9;
+text-align: center;
+
+/* Medium/Body 1 */
+font-family: "TT Supermolot Neue",sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 22.5px */
+}
+
+.profile_section_all_main_total {
+    display: flex;
+    align-items: center;
+    color:#A7B1B9;
+white-space: nowrap;
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+margin-top: 16px;
+padding-bottom: 16px;
+border-bottom: 1px solid #1B1D20;
+}
+
+.profile_section_all_main_total svg{
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.profile_section_all_main_total span{
+    color: #FFF;
+/* DemiBold/H5 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.32px;
+}
+
+
+
+
+
+.profile_section_all_main_tabble{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    margin-top: 16px;
+    padding-right: 10px;
+}
+
+table.profile_section_all_main_tabble_main{
+	width: 100%;
+	border-collapse:separate;
+	border-spacing:0 8px;
+	height: auto;
+}
+table.profile_section_all_main_tabble_main,table.profile_section_all_main_tabble_main td, table.profile_section_all_main_tabble_main th {
+	border: 1px solid transparent;
+}
+table.profile_section_all_main_tabble_main td,table.profile_section_all_main_tabble_main th {
+	width: auto;
+	height: 35px;
+}
+table.profile_section_all_main_tabble_main th {
+	background: #347c99; 
+	color: #fff; 
+	font-weight: normal;
+}
+
+
+.profile_section_all_main_tabble_main_tittle{
+    color: #A7B1B9;
+
+    text-align: center;
+    /* DemiBold/Body 3 */
+    font-family: "TT Supermolot Neue", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 19.5px */
+    width: 100%;
+    letter-spacing: -0.26px;
+}
+
+.profile_section_all_main_tabble_main_tittle:first-child{
+    text-align: left;
+    padding-left: 16px;
+}
+.profile_section_all_main_tabble_main_tittle:last-child{
+    padding-right: 16px;
+}
+.profile_section_all_main_tabble_main_text{
+    color: #fff;
+    /* DemiBold/Body 1 */
+    text-align: center;
+    font-family: "TT Supermolot Neue", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 22.5px */
+   
+}
+
+.profile_section_all_main_tabble_main_text:first-child{
+    text-align: left;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.profile_section_all_main_tabble_main_text svg{
+    vertical-align: auto;
+    margin-right: 8px;
+}
+
+.profile_section_all_main_tabble_main_status{
+    color: #fff;
+text-align: center;
+    /* DemiBold/Body 1 */
+    font-family: "TT Supermolot Neue", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 22.5px */
+}
+
+.profile_section_all_main_tabble_main_status_red{
+    color: #FF6464;
+}
+
+.profile_section_all_main_tabble_main_status_green{
+    color: #6CC464;
+}
+
+.profile_section_all_main_tabble_main_gamemode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_section_all_main_tabble_main_coin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+}
+
+.profile_section_all_main_tabble_main_coin svg{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.profile_section_all_main_tabble_main_text{
+    padding: 12px 16px;
+    background: #1B1D20;
+}
+
+.profile_section_all_main_tabble_main_text:last-child{
+    text-align: right;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.profile_section_all_main_tabble_main_tittle:last-child{
+    padding-right: 16px;
+    text-align: right;
+}
+
+.profile_section_all_main_tabble_main_coin:last-child{
+    justify-content: flex-end;
+    
+}

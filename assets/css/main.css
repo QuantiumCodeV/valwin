@@ -1,0 +1,364 @@
+.main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+.main_banners {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.main_banner {
+    width: 100%;
+    height: 140px;
+    margin-right: 16px;
+    border-radius: 2px;
+}
+.main_banner:last-child{
+    margin-right: 0px;
+}
+.main_banner_content {
+    padding: 24px;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.main_banner_reward_image{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.main_banner_reward {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+.main_banner_reward_texts {
+    display: flex;
+    flex-direction: column;
+}
+.main_banner_reward_texts_tittle {
+    color: #FFF;
+font-family: "TT Supermolot Neue Variable", sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.44px;
+position: relative;
+z-index: 1;
+text-transform: uppercase;
+}
+.main_banner_reward_texts_text {
+    color: #8A939F;
+font-family: "TT Supermolot Neue Variable", sans-serif;
+margin-top: 2px;
+font-size: 15px;
+position: relative;
+z-index: 1;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 22.5px */
+}
+.main_banner_reward_button {
+    margin-left: 47px;
+    cursor: pointer;
+    transition: all .5s;
+    outline: none;
+    border: none;
+    color: #FFF;
+display: flex;
+align-items: center;
+padding: 10px 16px;
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue";
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+border-radius: 4px;
+background: #4D88FF;
+}
+.main_banner_reward_button:hover{
+    opacity: .5;
+}
+.main_banner_reward_button img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.main_banner_welcome {
+    width: 100%;
+    max-width: 328px;
+}
+.main_banner_welcome_tittle {
+    color: #FFF;
+font-family: "TT Supermolot Neue Variable", sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.44px;
+position: relative;
+z-index: 1;
+}
+.main_banner_welcome_tittle span{
+    color: #4D88FF;
+}
+.main_banner_welcome_lvls {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    position: relative;
+    z-index: 1;
+}
+.main_banner_welcome_lvls_prev {
+    vertical-align: middle;
+    margin-right: 12px;
+}
+.main_banner_welcome_lvls_progress {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main_banner_welcome_lvls_progress_rect {
+    width: 100%;
+    height: 6px;
+    border-radius: 2px;
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(10px);
+}
+.main_banner_welcome_lvls_progress_rect_bg {
+    width: 10%;
+    height: 100%;
+    background: #4D88FF;
+}
+.main_banner_welcome_lvls_progress_texts {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.main_banner_welcome_lvls_progress_texts_info {
+    color: #FFF;
+    /* DemiBold/Body 2 */
+    font-family: "TT Supermolot Neue", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.28px;
+}
+.main_banner_welcome_lvls_progress_texts_status {
+    margin-left: auto;
+    color: #FFF;
+
+/* DemiBold/Body 2 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 21px */
+letter-spacing: -0.28px;
+}
+.main_banner_welcome_lvls_next {
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+
+
+.main_mods {
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+}
+.main_mods_tittle {
+    color: #fff;
+/* Bold/H4 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.44px;
+}
+.main_mods_items {
+    display: grid;
+    grid-template-columns: calc(33.3% - 16px) calc(33.3% - 16px) 33.3%;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    margin-top: 16px;
+}
+.main_mods_item {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+background: #1B1D20;
+}
+.main_mods_item_content {
+    padding: 8px;
+    padding-bottom: 10px;
+}
+.main_mods_item_rect {
+    width: 100%;
+    height: 159px;
+    border-radius: 4px;
+background: #242629;
+}
+.main_mods_item_name {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    color: #FFF;
+
+/* Bold/H5 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.32px;
+}
+
+.main_mods_item_name img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+.main_daily {
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+}
+.main_daily_rect {
+    width: 100%;
+    height: auto;
+    background: url(../img/main/daily_bg.png)center no-repeat;
+    background-size: 100% 100%;
+    border-radius: 4px;
+}
+.main_daily_rect_items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.main_daily_rect_item {
+    margin-left: auto;
+}
+.main_daily_rect_item:first-child{
+    margin-left: 0px;
+}
+.main_daily_rect_item_left {
+    vertical-align: middle;
+    margin-left: auto;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 100%;
+    max-width: 499px;
+}
+.main_daily_rect_item_center {
+    margin-left: auto;
+}
+.main_daily_rect_item_center_tittle {
+    color: #FFF;
+text-align: center;
+
+/* Bold/H2 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.64px;
+}
+.main_daily_rect_item_center_button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
+    color: #FFF;
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+padding: 8.5px 16px;
+border-radius: 4px;
+background: #4D88FF;
+display: block;
+margin: 0 auto;
+margin-top: 16px;
+
+}
+.main_daily_rect_item_center_button:hover{
+    opacity: .5;
+}
+.main_daily_rect_item_right {
+    vertical-align: middle;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 100%;
+    max-width: 499px;
+}
+
+.main_daily_blocks {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+.main_daily_block {
+    width: 100%;
+    height: auto;
+    margin-right: 16px;
+    border-radius: 4px;
+background: radial-gradient(50% 100% at 50% 0%, #22261F 0%, #1B1D20 100%);
+}
+.main_daily_block:last-child{
+    margin-right: 0px;
+}
+.main_daily_block_content {
+    padding: 24px;
+    position: relative;
+}
+.main_daily_block_image {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    max-width: 311px;
+    margin-top: -20px;
+}
+.main_daily_block_tittle {
+    color: #FFF;
+text-align: center;
+/* Bold/H4 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.44px;
+position: relative;
+    top: -10px;
+    margin-top: -10px;
+}
+.main_daily_block_text {
+    color: var(--Grey-300, #A7B1B9);
+text-align: center;
+margin-top: 12px;
+/* Medium/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 22.5px */
+}
+
