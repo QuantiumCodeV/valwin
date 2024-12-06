@@ -78,7 +78,7 @@ background: #4D88FF;
 margin-left: 8px;
 }
 .reward_up_code_button:hover{
-    opacity: .5;
+    background: #356AFC;
 }
 .reward_up_code_help {
     margin-top: 16px;
@@ -194,7 +194,7 @@ color: #fff;
 }
 
 .reward_block_button:hover{
-    opacity: .5;
+    background: #356AFC;
 }
 
 .reward_block_button_noactive{
@@ -265,7 +265,7 @@ border-radius: 4px;
 background: #4D88FF;
 }
 .reward_cases_up_button:hover{
-    opacity: .5;
+    background: #356AFC;
 }
 .reward_cases_up_button svg{
     vertical-align: middle;
@@ -311,6 +311,7 @@ letter-spacing: -0.32px;
 .reward_cases_block_button {
     display: flex;
     margin: 0 auto;
+    justify-content: center;
   margin-top: 12px;
   color: #FFF;
   /* DemiBold/Body 1 */
@@ -327,6 +328,7 @@ letter-spacing: -0.32px;
   white-space: nowrap;
   border-radius: 4px;
 background: #4D88FF;
+width: 100%;
 }
 .reward_cases_block_button svg{
     display: none;
@@ -334,7 +336,7 @@ background: #4D88FF;
     margin-right: 8px;
 }
 .reward_cases_block_button:hover{
-    opacity: .5;
+    background: #356AFC;
 }
 .reward_cases_block_button_lock svg{
 display: block;
@@ -361,3 +363,11 @@ display: block;
     color: #7C8994;
 }
 
+
+.reward_cases_block_button_lock:hover{
+    background: #272A2F;
+}
+
+.reward_cases_block_button_time:hover{
+    background: #272A2F;
+}

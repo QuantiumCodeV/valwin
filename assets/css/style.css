@@ -91,7 +91,7 @@ body {
 
 .container{
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
 }
@@ -163,8 +163,12 @@ transition: all .5s;
   fill: #fff;
 }
 
+.header_item_navigation_active:hover{
+  opacity: 1;
+}
+
 .header_item:nth-child(2){
-  margin-left: auto;
+  margin-left: 90px;
 
 }
 .header_item_balance {
@@ -211,7 +215,7 @@ border-radius: 4px;
 background: #4D88FF;
 }
 .header_item_balance_balance_button:hover{
-  opacity: .5;
+  background: #356AFC;
 }
 .header_item:last-child{
   margin-left: auto;
@@ -340,12 +344,57 @@ transition: all .5s;
   vertical-align: middle;
   transition: transform 0.3s ease; /* Плавный переход для поворота */
 
-  transform: rotate(180deg);
 }
 
 
+.header_item_buttons {
+  display: flex;
+  align-items: center;
+}
+.header_item_button {
+  color: #FFF;
+/* DemiBold/Body 1 */
+font-family: "TT Supermolot Neue", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 22.5px */
+outline: none;
+border: none;
+cursor: pointer;
+transition: all .5s;
+padding: 8.5px 16px;
+border-radius: 4px;
+background: #272A2F;
+}
 
+.header_item_button:first-child:hover{
+background: #383C41;
+}
+.header_item_button:last-child{
+  background: #4D88FF;
+  margin-left: 8px;
+  }
+.header_item_button:first-child:hover{
+  background: #383C41;
+  }
+  .header_item_button:last-child:hover{
+    background: #356AFC;
+  }
 
+.header_item:nth-child(3){
+  margin-left: auto;
+  align-items: center;
+  display: none;
+}
+
+.header_avtoriz .header_item:last-child{
+  display: none;
+}
+
+.header_avtoriz .header_item:nth-child(3){
+  display: flex;
+}
 
 
 
@@ -473,7 +522,7 @@ margin-top: auto;
 outline: none;
 border: none;
 background: transparent;
-color: #A7B1B9;
+color: #fff;
 
 /* Medium/Body 1 */
 font-family: "TT Supermolot Neue";

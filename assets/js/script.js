@@ -1,7 +1,4 @@
 // MAIN СТРАНИЦА
-
-// СКРИПТ НА ОТКРЫТИЕ/ЗАКРЫТИЕ MENU
-
 $(document).ready(function() {
     let isMenuOpen = false; // Переменная для отслеживания состояния меню
     const icon = $('.header_item_user_arrow_icon'); // Иконка стрелки
@@ -13,14 +10,14 @@ $(document).ready(function() {
 
         if (!isMenuOpen) {
             // Если меню закрыто, открываем его
-            menu.slideDown(300, function() {
-                // После завершения анимации поворачиваем стрелку
-                icon.css('transform', 'rotate(180deg)');
-            });
+            menu.slideDown(300);
+            // Поворачиваем стрелку сразу
+            icon.css('transform', 'rotate(180deg)');
         } else {
             // Если меню открыто, закрываем его
-            icon.css('transform', 'rotate(0deg)'); // Возвращаем стрелку обратно
-            menu.slideUp(300); // Плавно закрываем меню
+            menu.slideUp(300);
+            // Поворачиваем стрелку сразу
+            icon.css('transform', 'rotate(0deg)');
         }
 
         isMenuOpen = !isMenuOpen; // Меняем состояние меню
@@ -29,22 +26,21 @@ $(document).ready(function() {
     // Закрытие меню при нажатии вне его
     $(document).on('click', function(event) {
         if (!$(event.target).closest(menu).length && !$(event.target).is('.header_item_user_arrow')) {
-            menu.slideUp(300); // Скрываем меню
-            icon.css('transform', 'rotate(0deg)'); // Возвращаем стрелку обратно
+            menu.slideUp(300);
+            // После завершения анимации возвращаем стрелку обратно
+            icon.css('transform', 'rotate(0deg)');
             isMenuOpen = false; // Сбрасываем состояние меню
         }
     });
 
     // Закрытие меню при нажатии на элемент меню
     $('.header_menu_item').on('click', function() {
-        menu.slideUp(300); // Скрываем меню
-        icon.css('transform', 'rotate(0deg)'); // Возвращаем стрелку обратно
+        menu.slideUp(300);
+        // После завершения анимации возвращаем стрелку обратно
+        icon.css('transform', 'rotate(0deg)');
         isMenuOpen = false; // Сбрасываем состояние меню
     });
 });
-
-
-
 
 
 //   СКРИПТ НА ЗАКРЫТИЕ МОДАЛОК
@@ -223,13 +219,13 @@ $(document).ready(function() {
 $(document).ready(function() {
     // Открытие/закрытие модального окна
     $('.OpenNotification').click(function() {
-        var isVisible = $('#Notification').css('display') === 'block';
+        var isVisible = $('#Notification').is(':visible');
         
         if (isVisible) {
-            $('#Notification').css('display', 'none');
+            $('#Notification').slideUp(); // Закрытие с эффектом слайда
         } else {
-            $('.modal').css('display', 'none');
-            $('#Notification').css('display', 'block');
+            $('.modal').slideUp(); // Закрытие других модальных окон с эффектом слайда
+            $('#Notification').slideDown(); // Открытие с эффектом слайда
         }
     });
 
@@ -248,7 +244,7 @@ $(document).ready(function() {
     $(document).click(function(event) {
         var target = $(event.target);
         if (!target.closest('#Notification').length && !target.closest('.OpenNotification').length) {
-            $('#Notification').css('display', 'none');
+            $('#Notification').slideUp(); // Закрытие с эффектом слайда
         }
     });
 });

@@ -12,11 +12,11 @@
 .modal_login_rect {
   position: fixed;
   left: calc(50% - 286.5px);
-  top: calc(50% - 308px);
+  top: calc(50% - 314px);
   z-index: 12;
   width: 100%;
   max-width: 573px;
-  height: auto;
+  height: 628px;
   border-radius: 4px;
   background: #1b1d20;
 }
@@ -26,10 +26,12 @@
 }
 .modal_login_rect_item {
   width: 100%;
+  height: 100%;
 }
 .modal_login_rect_item_img {
   width: 100%;
   height: 100%;
+  height: 628px;
 }
 .modal_login_rect_item_content {
   padding: 24px;
@@ -199,7 +201,7 @@ transition: all .5s;
 }
 
 .modal_login_rect_item_section_main_button:hover {
-  opacity: 0.5;
+  background: #356AFC;
 }
 
 .modal_login_rect_item_section_bottom_other {
@@ -262,11 +264,11 @@ transition: all .5s;
 }
 
 .modal_login_rect_item_section_bottom_button:hover {
-  opacity: 0.5;
+  background: #383C41;
 }
 
 #modalSign .modal_login_rect {
-  top: calc(50% - 355.25px);
+  top: calc(50% - 314px);
 }
 
 .modal_login_rect_item_section_checkbox{
@@ -327,9 +329,10 @@ transition: all .5s;
   left: 0px;
   top: 0px;
   text-align: center;
-  background-color: transparent;
+  background-color: #4D88FF;
   font-size: 10px;
   height: 22px;
+  border-radius: 2px;
   width: 22px;
 }
 

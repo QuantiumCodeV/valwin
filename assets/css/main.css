@@ -86,7 +86,7 @@ border-radius: 4px;
 background: #4D88FF;
 }
 .main_banner_reward_button:hover{
-    opacity: .5;
+    background: #356AFC;
 }
 .main_banner_reward_button img{
     vertical-align: middle;
@@ -95,6 +95,7 @@ background: #4D88FF;
 .main_banner_welcome {
     width: 100%;
     max-width: 328px;
+    margin-left: auto;
 }
 .main_banner_welcome_tittle {
     color: #FFF;
@@ -298,7 +299,7 @@ margin-top: 16px;
 
 }
 .main_daily_rect_item_center_button:hover{
-    opacity: .5;
+    background: #356AFC;
 }
 .main_daily_rect_item_right {
     vertical-align: middle;
